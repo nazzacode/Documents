@@ -1,0 +1,32 @@
+    ----- Notes chapter 6: MAKING OUR OWN TYPES AND TYPECLASS
+
+--when defining a data type;
+-- part before '=' is the TYPE CONSTRUCTOR
+-- part after '=' VALUE CONSTRUCTOR (poss seperated by |'s)
+
+{-if we add deriving (Show) at the end of a data declaration
+Haskell automagically makes that type part of the Show typeclas -}
+
+data Shape = Circle Float Float Float | Rectangle Float Float Float Float deriving (Show)
+
+    -- 2. Type Parameters
+
+data Maybe a = Nothing | Just a  -- type constructor
+
+    -- 4. Type Synonyms
+--giving some types different names so that they make more sense to someone reading our code and documentation
+
+type PhoneNumber = String
+type Name = String
+type PhoneBook = [(Name,PhoneNumber)]
+
+--makes some damn pretty shit
+
+inPhoneBook :: Name -> PhoneNumber -> PhoneBook -> Bool
+inPhoneBook name pnumber pbook = (name,pnumber) `elem` pbook
+
+data Either a b = Left a | Right b deriving (Eq, Ord, Read, Show)
+
+    -- BINARY SEARCH TREES
+
+data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show, Read, Eq)

@@ -1,0 +1,13 @@
+#+TITLE: Doom Emacs
+
+* TODO General
+- [ ] change astrix titles and bullets to look better
+- [ ] hello
+
+* TODO Org Mode [0/6]
+- [-] how to toggle line numbers
+- [ ] rewatch DT VID
+- [ ] colored headings -> sized headings
+- [ ] render to pdf
+- [ ] inline latex rendering (knowledge base)
+- [ ] spellcheck

@@ -1,0 +1,89 @@
+#
+#TITLE: Org Mode Basics in Doom Emacs
+#+DESCRIPTION: An org mode documnet to demonstrate org mode (otes from DT youtube)
+
+* A New Headline
+** Level 2
+*** Level 3
+**** Level 4
+***** Level 5
+****** Level 6
+* Getting Started in Org mode =
+
+** Config Files
+- config fils in ~/.doom.d
+
+** Absoloute Basics
+SPC (Space) is the main command
+M-x : (Meta(alt)-x Read org mode manual
+SPC-m-x : toggle heading
+SPC-m-i : toggle line as list
+
+- Unordered list item
+  + you can use plus aswell
+  + another list item
+
+1. Ordered list item 1
+2. ordered list item 2
+
+* Motion
+g-j/g-k OR CTR-j/k : move to next/prev element
+g-h/g-l : move to parent/child element
+
+* Structure Editing
+C(Ctrl)-RET : insert new heading after subtree
+M-h/l : promote/demote heading
+M-S(shift)-h/l : promote/demote current subtree
+M-j/k : move subtree up/down
+M-S-f/k : move line up/down
+
+* Advanced (Evil) Editing
+vae : select element
+dae : delete an element
+vaR : select a subtree
+daR : delete a subtree
+yiR : yank a subtree
+
+* Insert Snippets
+SPC-i-s
+current time: Wed Nov 11 23:59:49 2020
+* TODO learn this magic
+S-LEFT : toggle todo
+SPC-m-t : change state
+** TODO more magic
+** PROJ hello
+* Calander etc [2/4] [50%]
+- [X] eggs
+- [ ] milk
+- [X] beer
+- [ ] fun
+
+SCHEDULED: <2020-11-12 Thu 16:00-18:00>
+
+* Agenda
+SPC-o-a : org agenda
+* Tables
+** Creating Tables
+C-RET : create a new line in the table
+TAB/S-TAB : go foward/back a cell
+SPC-m-b-'-' : make table headline below
+S-RET : Duplicate field in cell below
+| ONE    | TWO          | THREE       | FOUR    |
+|--------+--------------+-------------+---------|
+| Its is | really crazy | how fricken | amazing |
+| org    | mode         | is          | wow!    |
+| a word | Another word |             |         |
+|        |              |             |         |
+|        |              |             |         |
+** Table motion
+M-k : move current row up
+M-j : move current row down
+M-h : move current column left
+M-l : move current column right
+M-S-l : insert new column (above)
+M-S-h : delete current column
+M-S-j : insert new row
+M-S-k : delete current row
+
+* Nathans Shizzle
+M-= (Meta(alt)+(-)+=): show word count

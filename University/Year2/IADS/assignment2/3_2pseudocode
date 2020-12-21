@@ -1,0 +1,81 @@
+// IADS coursework 2
+// question 3.2
+
+/*I have additionally assumed a node.overflow similar to node.left, node.mid
+*/and node.right to represent the 4th (and illegitimate) child of a node
+
+
+/*
+* Returns the parent node
+*/
+Function lookup'(key)
+    u = r
+    do
+        switch()
+            case (u.leftkey  >= k)
+                u = u.leftkey
+            case (u.midkey >= k)
+                u = u.mid
+            case (u.right is not "null")
+                u = u.right
+            default
+                u = u.mid
+        while(u is not a leaf)
+
+    return u.parent
+
+
+/*
+*Creates a new node in the rightmost position 
+*/
+Function insertNode(parent, children[])
+    new Node(parent, children[])
+
+
+/*
+* checks if node is overflowing, splits if so and recurses up structure
+*/
+Function updateKeys(node)
+    if node.overflowkey is "null"
+        return true
+    if (node is root)
+        node.parent = insertNode("null",node)
+    insertNode(node.parent, [node.right,node.overflow])
+    node.remove(overflow)
+    node.remove(right)
+    updateKeys(node.parent)
+    
+
+/*
+*inserts a new leaf into the tree
+*/
+Algorithm insert(leaf)
+    if (isEmpty())
+        return "null"
+    else
+        parentnode =  lookup'(leaf.key)
+
+        if (parentnode.leftkey == leaf.key)
+            parentnode.leftvalue = leaf.value
+        else if (parentnode.leftkey >= leaf.key)
+            parentnode.overflow = node.right
+            parentnode.right = node.mid
+            parentnode.mid = node.left
+            parentnode.left = leaf.value
+        else if (node.midkey == leaf.key)
+            parentnode.midvalue = leaf.value
+        else if (parent.midkey >= leaf.key)
+            parentnode.overflow = node.right
+            node.right = node.mid
+            node.mid = leaf.value
+        else if (parent.rightkey == leaf.key)
+            parentnode.rightvalue = leaf.value
+        else if (parent.rightkey >= leaf.key)
+            parentnode.overflow = node.right
+            node.right = leaf
+        else
+            parentnode.overflow = leaf
+
+        updateKeys(parentnode)
+        return true
+        

@@ -1,0 +1,232 @@
+package uk.ac.ed.inf.aqmaps;
+
+import java.io.*;
+
+import java.lang.InterruptedException;
+import java.lang.reflect.Type;
+
+import java.net.URI;
+import java.net.ConnectException;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.net.http.HttpResponse.BodyHandler;
+import java.net.http.HttpResponse.BodyHandlers;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+
+import com.esri.core.geometry.*;
+import com.esri.core.geometry.Geometry;
+import com.esri.core.geometry.Point;
+import com.esri.core.geometry.Polygon;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import com.mapbox.geojson.*;  // use qualified 
+
+
+
+
+/**
+ * Hello world!
+ */
+public class App {
+
+    private static final int W3W_SIZE = 33;  // m^2 
+    private static final int DAILY_SENSORS = 33;
+    // Intialise HttpClient, shared between all HttpRequests
+    private static final HttpClient client = HttpClient.newHttpClient();
+
+    /** Description */
+    public static void main( String[] args ) {
+        // Read in args
+        // TODO do on single line?
+        // TODO check boundaries (eg day < 32)
+        String day        = args[0];
+        String month      = args[1];
+        String year       = args[2];
+        Double startLng   = Double.parseDouble(args[3]);
+        Double startLat   = Double.parseDouble(args[4]);
+        String portNumber = args[5];
+    
+        // Important filepaths
+        String serverUrl  = "http://localhost:" + portNumber;
+        String noFlyUrl   = serverUrl + "/buildings/no-fly-zones.geojson";
+        String airDataUrl = serverUrl + "/maps/" + year + "/" + month + "/" 
+                               + day + "/" + "air-quality-data.json"; 
+
+        // Read data from server
+        String noFlyGeoJson = getFileFromServer(noFlyUrl);
+        String airDataJson  = getFileFromServer(airDataUrl);
+
+        // noFlyGeoJson -> [buildings[points]]
+        Polygon[] noFlyPolygons = getNoFlyGeometry(noFlyGeoJson);
+        
+        // airDataJson -> [points] (dims = 33*2) 
+        Point[] sensorLocations = 
+            getsensorLocations(airDataJson, serverUrl);
+
+        
+        System.out.print(noFlyPolygons.toString());
+        System.out.print(sensorLocations.toString());
+        
+        
+        
+        // Algorithm: Find flight path
+        Point startPoint = new Point(startLng, startLat);
+        String flightpath = findFlightpath(startPoint, noFlyPolygons, sensorLocations);
+        // Generate output geojson map
+        FeatureCollection readings = generateReadingsMap(flightpath);
+
+
+
+        // --- Output Map ---
+        // output fligtpath-DD-MM-YYYY.txt
+        // output readings-DD-MM-YYYY.geojson
+         
+        // output to present working directory as string 
+        //try (PrintStream out = new PrintStream(
+                //new FileOutputStream(System.getProperty("user.dir") + "/flightpath.text"))) {
+            //out.print(heatmap.toJson());
+
+        System.out.println( "All Done!" );
+    }
+    
+
+	/** Function Description */
+    private static String getFileFromServer( String url ) {
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+            // Connect to server and make request (otherwise throw error and exit)
+        try { HttpResponse<String> response = client.send(request, BodyHandlers.ofString());  
+            // check status code
+            int statusCode;
+            if ( (statusCode = response.statusCode()) == 200 ) {
+                // read in file 
+                String file = response.body();
+
+                return file;
+            }
+            // handle status code error 
+            else {
+                System.out.println( 
+                        "Fatal error: Could not retrieve data from: " + url
+                                           + " Http status code" + response );
+                //TODO throw
+                System.exit(1); // Exit the application
+            }
+
+        } catch( IOException | InterruptedException e ) {
+            System.out.println( e );
+            System.exit(1); // Exit the application
+        }
+
+        return "";
+    }
+ 
+    /** Description */
+    private static Point[] getsensorLocations( 
+    		String airDataJson, String serverUrl) {
+    	
+        // parse airDataJson to airData class
+        Type airDataListType = new TypeToken<ArrayList<AirData>>() {}.getType();
+        ArrayList<AirData> airDataList = 
+        		new Gson().fromJson(airDataJson, airDataListType);
+        
+        // Retrieve w3w locations
+        String[] sensorW3wLocations = new String[DAILY_SENSORS];
+        for(int i = 0; i<sensorW3wLocations.length; i++) {
+            sensorW3wLocations[i] = airDataList.get(i).location;
+        }
+
+        // loop over sensor locations
+        // and retrieve "NeSw" bounds ("NeSw" = Northeast/Southwest)
+        // and convert to centre-point  
+        Point[] sensorLocations = new Point[DAILY_SENSORS];
+        for (int i = 0; i<sensorW3wLocations.length; i++) {
+        	// retrieve w3w 'details' json from server
+            String w3wDetailsJson = getFileFromServer(serverUrl + "/words/" 
+                     + sensorW3wLocations[i].replace(".", "/") + "/details.json");
+
+            // parse w3wDetailsJson to w3wDetails class 
+            W3wDetails w3wDetails = new Gson().fromJson(w3wDetailsJson, W3wDetails.class);
+
+            // find NeSw bounds
+            Double[] w3wNeSw =
+                {w3wDetails.square.northeast.lng, w3wDetails.square.northeast.lat, 
+                 w3wDetails.square.southwest.lng, w3wDetails.square.southwest.lat};
+            // convert to centre-point
+            Double[] w3wPointArray = 
+                {(w3wNeSw[0] + w3wNeSw[2]) / 2, (w3wNeSw[1] + w3wNeSw[3]) / 2 };
+            // parse to geometry.Point
+            Point w3wPoint = new Point(w3wPointArray[0], w3wPointArray[1]);
+
+            // append to sensorLocations
+            sensorLocations[i] = w3wPoint;
+        }
+
+        return sensorLocations;
+    }
+
+
+    /** Description */
+    private static Polygon[] getNoFlyGeometry(String noFlyGeoJson) {
+        FeatureCollection noFlyFC = FeatureCollection.fromJson(noFlyGeoJson);
+        // initialise array to hold geometry.Polygon buildings
+        Polygon[] noFlyPolygons = new Polygon[noFlyFC.features().size()];
+        // loop over Buildings
+		// convert to geometry.Polygon
+        for (int i=0; i<noFlyFC.features().size();i++) {
+        	// Feature -> geojson.Polygon
+        	com.mapbox.geojson.Polygon noFlyGeoJsonPolygon = 
+        			(com.mapbox.geojson.Polygon) noFlyFC.features().get(i).geometry();
+        	// geojson -> geometry.MapGeometry
+        	MapGeometry polygonGeom = OperatorImportFromGeoJson.local().execute(
+        			GeoJsonImportFlags.geoJsonImportDefaults, 
+        			Geometry.Type.Polygon, noFlyGeoJsonPolygon.toJson(), null);
+        	Polygon polygon = (Polygon) polygonGeom.getGeometry();
+        	// append to array
+        	noFlyPolygons[i] = polygon;
+        }
+        return noFlyPolygons;
+    }
+
+
+    /** Description */
+    private static String findFlightpath( Point startPoint, 
+    		Polygon[] noFlyPolygons, Point[] sensorLocations ) {
+    	
+    	// merge start point and sensor locations
+    	Point[] vertices = new Point[sensorLocations.length + 1];
+    	vertices[0] = startPoint;
+    	for(int i = 0; i<sensorLocations.length; i++) {
+    		vertices[i+1] = sensorLocations[i];
+    	}
+
+    	// generate Adjacency matrix
+    	// accounting for shortest path round no-fly object 
+        Double[][] adjacencyMatrix = 
+        		GeometryUtils.generateAdjacencyMatrix(vertices, noFlyPolygons);
+        
+        //System.out.println(adjacencyMatrix.length);
+        
+        // aproximatly solve the TSP problem of shortest round trip
+        // using the christofides algorithm
+        Point[] orderedVertices = Christofides.execute(vertices, adjacencyMatrix);
+        
+    	
+    	// Fly Drone though Route
+    
+        System.out.println( "finding path!" );
+        return null; 
+    }
+    
+    private static FeatureCollection generateReadingsMap(String flightpath) {
+    	return readings;
+    }
+    
+}
+

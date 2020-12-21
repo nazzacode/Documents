@@ -1,0 +1,41 @@
+#+TITLE: Representation
+
+* 1. Imtroduction: What is a Mental Representation
+A *mental representation* is a structure about something internal that bears information.
+- Representational models try to map the relationship between the input data to our perception
+- Intrest in representational models of cognition is reasonably recent (due to the popularty of behaviourism)
+- Modeling /representational systems/ is now at the forefront of Cognitive Science following the maturing of Evolutionary thinking in psycholgy
+
+* 2. Isomorphism & Homomorphism
+Good representational models should explain:
+    - what aspects of the world are being modelled
+    - what aspects of mind are doing the modelling
+    - What is the explicit relation between (1) and (2)
+
+*Isomorphism* is one polarity, a representational system where for every state in the world there is a coresponding state of the representation.
+    - NS: from a Darwinian perspective, this is probably the wrong starting for understanding representation
+
+- ⭐ If the environment never punished you for not representing information in a way or never rewarded you for doing so, you will not evolve a sensitivity to it.
+    + for example, until recently it did you little good to be able to know the spin of electron in your bowl of soup
+
+*Homomorphism* is a representation in which every meaningful state/transformation of the world there is a coresponding state/transformation in the representation
+    - For example a computer chess program will have a representation of all the important rules but none of the unnecessary info-rmation such as the size and materials of the board
+
+* Evolution
+- Evolutionary psycholgy underpins modern understanding of the neccessity and value of representational models
+- Humans evolved in certain environments; our brains incoporate regularities in our environment as built in assumptions
+  + these heuristic representations tell us the most likely outcome of the information we are receiving, hence alowing us to distinguish from the infinity of interpretation
+- for example, in the visual system there is a dramatic compression from 125 million photo receptors to 1 million ganglion cells in the retina to futher exponential compression in the cortex
+
+* Entropy Maximisation
+- The evoloutionary view is a complete conceptual conversion of how people generally assume we experience the world
+- most people think they experience the world essentially as it is-- no filter
+- However, really what we see is our personal cortex abstractly interpreting data patterns that have been selected for by our ancestors
+- Our minds want to optimise representa tions of information in a form that does the most with the least
+  + hence representational theories must appeal to the principle of *entropy maximisation*
+
+* Predictive Processing
+*Predictive Processing* claims that the primary function of the mind is as a prediction generating machine.
+- ⭐ Your mind continually presents a representation of the world before you actually get the data, the cascades prediction errors into its model for any data that doesn't fit
+  + hence our perception is a representatoin of the world reflecting the interplay of bottom-up and top-down processes
+  + This interplay is a baysian process of rapidly refining our perceptual predictions in light of the sensory evidence

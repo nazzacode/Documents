@@ -1,0 +1,32 @@
+# Python Notes
+
+# Basic class structure
+class Person:
+    def __init__(self,name,job):
+        self.name = name
+        self.job = job
+
+    def getEmployeeDescription(self):
+        return self.name + "is a " + self.job
+
+# python does not have explicit access to modifiers (e.g public, private)
+# but we can pretty much achieve this by prepending a method or attribute name
+# with a double underacore (__), like in __init__
+
+# Reading and Writing
+f = open(filename,mode,encoding)     # where mode = r or w,
+f.close()    # always close an explicity opened file
+
+# or
+
+with open('filename') as f:     # closes file automatically
+    read_data = f.read()
+
+lines = reader.readlines(n) # n is number of lines we wish to read
+writer.writelines(lines)
+
+
+
+
+
+

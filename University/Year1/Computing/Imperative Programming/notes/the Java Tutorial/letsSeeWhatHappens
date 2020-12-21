@@ -1,0 +1,132 @@
+
+
+//CHAPTER 2 - OO Programming Concepts
+
+// statically typed - all variables must be declared before they can be used
+
+//-------------------- CHAPTER 3: LANGUAGE BASICS -----------------------
+
+//PRIMATIVE DATA TYPES
+
+    byte //min -128, max (inclusive 127)
+
+    short //16bit int
+
+    int //320bit
+
+    long //64-bit
+
+    float // single precision 32-bit (unprecise compated to double but saves memory)
+
+    double // 64-bit floating point value
+
+    boolean // true FALSE
+
+    char // single 16-bit unicode character
+
+    //extra
+
+    string //enclosing chars within double quotes automaticall creates a string
+    //immutable - once set cannot be changed
+
+
+//DEAFULT VALUES
+
+    byte    0
+    short   0
+    int     0
+    long    0L
+    float   0.0f
+    Double  0.0d
+    boolean false
+    char    "\u00000" //zero
+    string  null
+
+// SPECIAL CHARACTERS
+
+    \b //backspace
+    \t //tab
+    \n //new line
+    \f //from feed
+    \r //carriage return
+    \" //double quote "
+    \' //single quote '
+    \\ //backslash
+
+    null //can be assigned to an variable other than primtive types
+
+//ARRAYS
+
+class ArrayDemo {
+    public static void main(String[] args) {
+        // declares an array of integers
+        int[] anArray;
+
+        // allocates memory for 10 integers
+         //if missing error: ArrayDemo.java:4: Variable anArray may not have
+         // been initialized.
+        anArray = new int[10];
+
+        // initialize first element
+        anArray[0] = 100;
+
+        System.out.println("Element at index 0: " + anArray[0]);
+
+
+    // shortcut syntax
+
+    int[] anArray = {
+    100, 200, 300,
+    400, 500, 600,
+    700, 800, 900, 1000
+    };
+
+    //ARRAY MANIPULATIONS
+
+    java.unit.Arrays //dis yourhomeboy
+
+    arraycopy() //copies shit
+
+    copOfRange(array, from, to) //do not need to create a destination as returned by method
+
+    sort() //puts into accending order
+
+    binarySearch() //searches for value and returns its index
+
+    equals() //compares two arrays to see if equal
+
+    fill() //places a specific value at each index
+
+
+//          3.1 - VARIABLES
+
+// instance variables (non-static fields) - values unique to each instance of class
+//
+// class variables (static fields) - declared with static; one copy in existance
+//
+// local variables - decalred like a field e.g int cont - 0;
+//
+// parameters - args values
+
+//  a) CONDITIONAL OPERATIORS
+
+&& // AND
+||  // OR
+?: // if then else shorthand operator
+someCondition ? value1 : value2
+//(if) someCondition ? (is true) (assign the value) value1 : (else) value2;
+
+instanceof // checks of an object of a class,subclass, interface
+~ //bitwise operator - turns every zero to a 1 and vica versa
+<< // shifts a bit pattern left
+>> // shifts a bit pattern right
+& // bitwise AND operator
+| // bitwise or operator
+^ // bitwise exclusive or operator
+
+// b) COMPUND ASSIGNMENT
+
+(operator)= // e.g *= assigns the result of a multiplication
+
+
+//         3.3 EXPRESSIONS, STATMENTS AND BLOCKS

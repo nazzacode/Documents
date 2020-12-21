@@ -1,0 +1,21 @@
+<h1 id="introduction-to-databases">Introduction to Databases</h1>
+<h1 id="tutorial-5-solutions">Tutorial 5 Solutions</h1>
+<p>Nathan Sharp | S1869292</p>
+<h2 id="problem-1">Problem 1</h2>
+<ol type="a">
+<li><em>Note:</em> the four given FDs are refered to by their number</li>
+</ol>
+<ol type="1">
+<li><p><span class="math inline"><em>D</em> ⇒ <em>A</em><em>C</em></span> does not hold with witness rows=(1,2), D=(3,3), AC=((1,2),(2,2)).</p></li>
+<li><p><span class="math inline"><em>A</em><em>B</em> ⇒ <em>D</em><em>E</em></span> holds.</p></li>
+<li><p><span class="math inline"><em>F</em><em>D</em> ⇒ <em>E</em></span> does not hold with witness rows=(1,2), F/D=(4,3), E=(0,1).</p></li>
+<li><p><span class="math inline"><em>C</em> ⇒ <em>F</em></span> holds.</p></li>
+</ol>
+<ol start="2" type="a">
+<li><span class="math inline"><em>A</em><em>C</em> ⇒ <em>E</em></span></li>
+</ol>
+<p><span class="math inline"><em>B</em><em>D</em> ⇒ <em>E</em><em>F</em></span></p>
+<p><span class="math inline"><em>E</em><em>F</em> ⇒ <em>B</em><em>C</em></span></p>
+<p><span class="math inline"><em>B</em><em>C</em> ⇒ <em>B</em><em>F</em></span></p>
+<p><span class="math inline"><em>A</em><em>D</em> ⇒ <em>C</em><em>F</em></span> implied by, (5) <span class="math inline"><em>D</em> ⇒ <em>C</em></span> by decomposition of (1) (6) <span class="math inline"><em>D</em> ⇒ <em>C</em><em>F</em></span> by union of (1) and (4) (7) <span class="math inline"><em>A</em><em>D</em> ⇒ <em>A</em><em>C</em><em>F</em></span> by augmentation of (6) (8) <span class="math inline"><em>A</em><em>D</em> ⇒ <em>C</em><em>F</em></span> by decomposition (7)</p>
+<p><span class="math inline"><em>A</em><em>B</em><em>C</em> ⇒ <em>D</em><em>F</em></span> implied by,</p>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc616e19-f95f-4040-ab14-be481b93c779" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/SystemTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/SystemTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/TestDateRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/TestDateRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/TestLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/TestLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/ValuationPolicyTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/ValuationPolicyTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Bike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DateRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DateRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Deliverable.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Deliverable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DeliveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DeliveryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DeliveryServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DeliveryServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DoubleDecBalanceDepreciation.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DoubleDecBalanceDepreciation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/EntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/EntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/LinearDepreciation.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/LinearDepreciation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/MockDeliveryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/MockDeliveryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/SystemDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/SystemDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/ValuationPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/ValuationPolicy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/ValuationPolicyTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/ValuationPolicyTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/SystemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/TestDateRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/TestLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/tests/uk/ac/ed/bikerental/ValuationPolicyTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Bike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/BikeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DateRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Deliverable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DeliveryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DeliveryServiceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/DoubleDecBalanceDepreciation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/EntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/LinearDepreciation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/MockDeliveryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/SystemDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/ValuationPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github/bin/Inf2C-SE-Bike-Rental-Skeleton/v2/BikeRentalSystem/ValuationPolicyTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/submission/BikeRental/bin/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/tests/uk/ac/ed/bikerental/SystemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/tests/uk/ac/ed/bikerental/TestDateRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/tests/uk/ac/ed/bikerental/TestLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/tests/uk/ac/ed/bikerental/ValuationPolicyTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/Bike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/BikeCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/BikeProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/BikeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/DateRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/Deliverable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/DeliveryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/DeliveryServiceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/DoubleDecBalanceDepreciation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/EntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/LinearDepreciation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/MockDeliveryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/SystemDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/ValuationPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/bin/v2/BikeRentalSystem/ValuationPolicyTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/submission/BikeRental/src/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/tests/uk/ac/ed/bikerental/SystemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/tests/uk/ac/ed/bikerental/TestDateRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/tests/uk/ac/ed/bikerental/TestLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/tests/uk/ac/ed/bikerental/ValuationPolicyTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/Bike.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/BikeCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/BikeProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/BikeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/DateRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/Deliverable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/DeliveryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/DeliveryServiceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/DoubleDecBalanceDepreciation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/EntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/LinearDepreciation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/MockDeliveryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/SystemDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/ValuationPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/submission/BikeRental/src/v2/BikeRentalSystem/ValuationPolicyTests.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/github/Inf2C-SE-Bike-Rental-Skeleton" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1U6wdsG9QHZRACZBqqLlZVUM2ft" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc616e19-f95f-4040-ab14-be481b93c779" name="Default Changelist" comment="" />
+      <created>1574690442104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574690442104</updated>
+      <workItem from="1574690446942" duration="33684000" />
+      <workItem from="1574970457313" duration="16128000" />
+      <workItem from="1575038500550" duration="334000" />
+      <workItem from="1575038854840" duration="523000" />
+      <workItem from="1575039399712" duration="20694000" />
+      <workItem from="1575061281269" duration="3134000" />
+      <workItem from="1575071324105" duration="724000" />
+      <workItem from="1575072436235" duration="10000" />
+      <workItem from="1575072573874" duration="2335000" />
+    </task>
+    <task id="LOCAL-00001" summary="filling in provided classes">
+      <created>1574719338534</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574719338534</updated>
+    </task>
+    <task id="LOCAL-00002" summary="filling in provided classes">
+      <created>1574907011697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574907011697</updated>
+    </task>
+    <task id="LOCAL-00003" summary="filling in provided classes">
+      <created>1574994921440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574994921440</updated>
+    </task>
+    <task id="LOCAL-00004" summary="completion of Use case 1 functionality">
+      <created>1575053674290</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575053674290</updated>
+    </task>
+    <task id="LOCAL-00005" summary="completion of Use case 1 functionality">
+      <created>1575054928762</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575054928762</updated>
+    </task>
+    <task id="LOCAL-00006" summary="final draft 1">
+      <created>1575060882196</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575060882196</updated>
+    </task>
+    <task id="LOCAL-00007" summary="final draft 1">
+      <created>1575063062653</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575063062653</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="filling in provided classes" />
+    <MESSAGE value="completion of Use case 1 functionality" />
+    <MESSAGE value="final draft 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="final draft 1" />
+  </component>
+</project>

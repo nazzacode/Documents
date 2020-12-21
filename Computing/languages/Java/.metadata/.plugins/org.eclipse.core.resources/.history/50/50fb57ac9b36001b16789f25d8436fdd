@@ -1,0 +1,145 @@
+package uk.ac.ed.inf.aqmaps;
+
+import java.lang.reflect.Type;
+
+import java.util.*;
+
+import org.json.JSONException;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import com.esri.core.geometry.*;
+import com.esri.core.geometry.Geometry;
+import com.esri.core.geometry.Point;
+import com.esri.core.geometry.Polygon;
+
+import com.mapbox.geojson.*;  // use qualified 
+
+import uk.ac.ed.inf.aqmaps.Sensor;
+
+
+/**
+ * Utility functions
+ */
+public class Utils {
+
+    /** Parse no flybuildings from geojson to com.esri.core.geometry Polygons 
+     * @throws JSONException */
+    public static Polygon[] parseNoFly( String noFlyGeoJson ) throws JSONException {
+        // parse to geojson feature collection
+        FeatureCollection noFlyFC = FeatureCollection.fromJson(noFlyGeoJson);
+
+        Polygon[] noFly = new Polygon[noFlyFC.features().size()];
+        // loop over Buildings and convert to geometry.Polygon
+        for (int i=0;i<noFlyFC.features().size();i++) {
+        	// Feature -> geojson.Polygon
+        	com.mapbox.geojson.Polygon noFlyJsonPolygon = 
+        	 (com.mapbox.geojson.Polygon) noFlyFC.features().get(i).geometry();
+        	// geojson.Polygon -> geometry.MapGeometry
+        	MapGeometry polygonGeom = OperatorImportFromGeoJson.local().execute(
+             GeoJsonImportFlags.geoJsonImportDefaults, 
+             Geometry.Type.Polygon, noFlyJsonPolygon.toJson(), null);
+            // geometry.MapGeometry -> geometry.Polygon
+            Polygon polygon = (Polygon) polygonGeom.getGeometry();
+
+        	// append to array
+        	noFly[i] = polygon;
+        }
+        return noFly;
+    }
+
+    /** parse air data to ArrayList<Sensor> */
+    public static ArrayList<Sensor> parseAirData(String airDataJson) {
+        Type type = new TypeToken<ArrayList<Sensor>>() {}.getType();
+        ArrayList<Sensor> sensors = new Gson().fromJson(airDataJson, type);
+       
+        return sensors;
+    }
+
+    /** Retrieve sensor location point via what3words (w3w) server file */
+    public static Point[] getsensorLocations(ArrayList<Sensor> sensors, 
+     HttpServer server) {
+        // get sensor w3w
+        String[] sensorW3wLocations = new String[sensors.size()];
+        for (int i=0;i<sensors.size();i++) {
+            sensorW3wLocations[i] = sensors.get(i).getLocation();
+        }
+
+        Point[] sensorLocations = new Point[sensors.size()];
+        // retirieve w3w centre-point from server
+        for (int i=0;i<sensorW3wLocations.length;i++) {
+            String filepath = "/words/"+sensorW3wLocations[i].replace(".", "/")
+                                                              +"/details.json";
+            // retrieve w3w 'details' json from server
+            String w3wDetailsJson = server.getFile(filepath);
+            // parse w3wDetailsJson to w3wDetails class 
+            W3wDetails w3wDetails = 
+                    new Gson().fromJson(w3wDetailsJson, W3wDetails.class);
+            // parse centre-point coordinates to geometry.Point
+            Point w3wPoint = new Point(w3wDetails.coordinates.lng, 
+            						   w3wDetails.coordinates.lat);
+
+            // append to sensorLocations
+            sensorLocations[i] = w3wPoint;
+        }
+        return sensorLocations;
+    }
+
+    /** generates flightpath output as per Coursework specifications */
+    public static String[] generateFlightpathOutput(List<List<Point>> flightpath,
+     ArrayList<Sensor> sensors) {
+        // count total number of moves
+        int numPositions = 0;
+        for(var subpath : flightpath){for(var move : subpath ){numPositions++;}};
+        int numMoves = numPositions - 1; 
+
+        System.out.println("Total number of moves: " + numMoves);
+
+        // intitalise output
+        String[] flightpathLines = new String[numMoves];
+        // initialse variables
+        Point to = flightpath.get(0).get(0);  // start point
+        int lineNo = 1;
+
+        // loop over moves (both loops) creating the output string
+        for( int i=0;i<flightpath.size();i++) {            
+            // next sensor reading: at final index of nested list
+            Point nextSensorReading = flightpath.get(i).get(
+             flightpath.get(i).size() - 1);
+            for(int j=0;j<flightpath.get(i).size();j++) {
+
+                Point from = to;  // from = previous to
+                to = flightpath.get(i).get(j);
+                if (to == from) { continue; }  // skip first interation
+                
+                // output values
+                double fromLng = from.getX();
+                double fromLat = from.getY();
+                int moveAngle = GeometryUtils.pointsToAngleFromEastGoingAntiCockwise(from, to);  // simple is key. 
+                double toLng = to.getX();
+                double toLat = to.getY();
+                String sensorW3w;
+                if (to == nextSensorReading && i < 33) {
+                    sensorW3w = sensors.get(i).getLocation();
+                } else { sensorW3w = "null"; }
+
+                // move output string
+                String flightpathLine = 
+                    lineNo + "," +
+                    fromLng + "," +
+                    fromLat + "," +
+                    moveAngle + "," +
+                    toLng + "," +
+                    toLat + "," +
+                    sensorW3w;
+               
+                // append to output
+                flightpathLines[lineNo-1] = flightpathLine;
+
+                lineNo++;
+            }
+        }
+        return flightpathLines;
+    }
+}

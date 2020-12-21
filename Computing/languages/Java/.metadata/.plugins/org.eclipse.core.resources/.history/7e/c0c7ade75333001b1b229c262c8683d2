@@ -1,0 +1,79 @@
+package uk.ac.ed.inf.aqmaps;
+
+import java.lang.Math;
+
+//import com.esri.core.geometry.OperatorConvexHull;
+import com.esri.core.geometry.*;
+
+public class GeometryUtils {
+	
+	/** generates an Adjacency Matrix for an array of points
+	 *  accounting for the shortest path round a noFly object
+	 */
+	public static Double[][] generateAdjacencyMatrix( 
+			Point[] vertices, Polygon[] noFlyPolygons ) {
+		int len = vertices.length;
+		// Initialise adjacency matrix
+		Double[][] adjacencyMatrix = new Double[len][len];	
+		// Fill Adjacency Matrix
+		// with distances not passing though no-fly zones  
+		System.out.println(Math.ceil(len/2));
+		for(int i=0; i<(int) Math.ceil(len/2);i++) {
+			for(int j=0; j<Math.ceil(len/2); j++) {
+				adjacencyMatrix[i][j] = 
+						getPathDistance(vertices[i], vertices[j], noFlyPolygons);
+				adjacencyMatrix[len-i-1][len-j-1] = adjacencyMatrix[i][j];
+			}
+		}
+		return adjacencyMatrix;
+	}
+
+
+	/** Gets the path distance between two point in the map
+	 *  taking the shortest path round a noFly object if necessary */ 
+	public static Double getPathDistance(
+			Point point1, Point point2, Polygon[] noFlyPolygons) {
+		// points -> vector
+		Polyline vector = new Polyline(point1, point2);
+		// initialise raw path distance
+		Double pathDistance = vector.calculateLength2D();
+		
+		// Simplify: noFlyPolygons -> Convex Hull 
+		// justification: max 2 intersection points
+		Polygon[] noFlyConvexHullPolygons = new Polygon[noFlyPolygons.length];
+		for(int i=0;i<noFlyPolygons.length; i++) {
+			Polygon noFlyConvexHullPolygon = 
+					(Polygon) OperatorConvexHull.local().execute(noFlyPolygons[i], null);
+			noFlyConvexHullPolygons[i] = noFlyConvexHullPolygon;
+		}
+		
+		for (Polygon noFlyConvexHullPolygon : noFlyConvexHullPolygons) {
+			// if vector intersects polygon
+			// distance += perimeter(min(leftCutPolygon, rightCutPolygon) - intersection
+			// e.g. the outer path round smaller side of a polygon 
+			if (OperatorIntersects.local().execute(
+					vector, noFlyConvexHullPolygon, null, null)) {
+				Polyline intersection = (Polyline) OperatorIntersection.local()
+						.execute(noFlyConvexHullPolygon, vector, null, null);
+				Double intersectionLength = intersection.calculateLength2D();
+			
+				// split polygon into left cut and right cut
+				GeometryCursor cuts = 
+						OperatorCut.local().execute(
+							false, noFlyConvexHullPolygon, vector, null, null);
+				Polygon leftCut = (Polygon) cuts.next();
+				if ( leftCut != null ) {
+					Polygon rightCut = (Polygon) cuts.next();
+					Double leftCutPerimeter  = leftCut.calculateLength2D();  // TODO Does this calculate what we want?
+					Double rightCutPerimeter = rightCut.calculateLength2D();
+					
+					// update distance
+					pathDistance += Math.min(leftCutPerimeter,rightCutPerimeter)
+													- intersectionLength;
+				}
+			}
+		}
+		return pathDistance;
+	}
+
+}

@@ -1,0 +1,95 @@
+#+TITLE: Causal Cognition final Assesment
+
+* Question 1
+/What Competitive advantages might cognitive agents capable of caual reasoning have over other congnitive agents that cannot reason causally?/
+
+Agents make non-random actions (output) based on their input from an environment. For inputs to be inputs they must be causualy related to the environment. For output actions to have non-random effect they must be able to causally influence the environment. Hence it is not clear if it is a well formed question to consider agents that have no causal reasoning capacities whatsoever as causal reasoning seems a fundemental presuppostion of agenthood.
+
+However we can speak about spectrum, even hierarchy of causal reasoning capabilities in agents. Judea Pearl argues for the following hierarchical taxonomy of causal reasoning-- (1) Association -> (2) Intervention -> (3) Counterfactual [ insert citation], with increasing causal model complexity from left to right as you accend his so-called 'causal ladder'. In this framework, a human playing chess might be able to reason 'several moves ahead' based on counterfactual reasoning, wheras a llama might not have such a capacity.
+
+* Question 2
+/What are some key commonalities between individual cognition and scientific methods? What are some key differences?/
+
+One commonality between individual cognition and scientific methods revolves arround the child scientist theory (Carey, 1985; Gopnik, 1988; Gopnik & Meltzoff, 1997; Wellman, 1990 [l5.1]) which proposes that children learn in a manner similar to how the scietific method postulates and tests theories. Children observe and intervene in the world, accumulating data on the structure of reailty, updating and reinventing their model building on previous understanding to ammas large bodies of useful knowledge. This knowledge keeps developing over your lifetime continuosly evolving [Schultz, Gopnick & Gylmor 2007] rather like sceince.
+
+
+As for the differences bewteen individual cognition and scientific method, there are quite obviously too many to mention as human cognition and the sceintific methods are fundamentally vastly differnt classes of thing. Two general differences to keep in mind are, 1) that humans evolved in certain enviornments, that makes us predisposed to interpreting the world in way that benefited our ancestors, and 2) humans rely on innate heuristics to deal with big data, wheras science can be arbitraity precise.
+
+* Question 3
+/How does Patricia Cheng (1997) argue that people go from observations of covariation to inferences of causal strength/
+
+This question relates to the problem of causal induction-- how are causal relations knowen from the input availiable to an information processing system and distinugished from non causal ones.
+
+Traditionally there have been two opposed views,
+
+ 1) Humeian (covariation)-- all we have in contiguty, temporal priority, and constant conjunction [hume 1748?], the problem being that is this is also the relation of coincidental events.
+ 2) Kantian (power) - causal knowledge is known a priori and causation is affirmed when we understand the mechanisim, the problem is that this begs the question of how we aquired such knowledge, esspecially in specific domains.
+
+(Cheng 1997) aregues we reason with both parts, "causal power is to covaration as theory is to model". We start with an a priori primer then interate between experimentation of covariation and logical reasoning building a growing body of causal knowledge. "A rooster's crowing does not elevate even a straw in the barn; it therefore surely does not elevate the sun. Sound, therefore, is not a viable causal power with respect to sunrise."
+
+* Question 4
+/What is the conceptual difference between a Positive Testing Stratergy and a Confirmatory Testing Stratergy? Why do they make similar predictions in setting explored in Coenen, Reheder & Gureckis (2015)/
+
+Both a Positive Testing Statery (PTS) and Confirmatory Testing Stratergy (CTS) are intervention stratergies to uncover causal structure in a system. PTS is an intervention at the root of a causal structure, to test making the whole system "work", blind to whether it helps distinguish between casual structure hypotheses. CTS is an intervention on the root node of a favored hypothesis and is similarly blind. Both are a simple heuristics that tend to correlate with information gain (IG) and both suffer from "confirmation bias" in that they select interventions that positivly confirm hypotheses rather than falsify them which is one way they can result in suboptimal IG. CTS essentialy is a varient of PTS with the addition of a favored hypothesis upfront. In the cited paper [cite], they make similar predictions because the structure of the question make these stratergies converge. You are given 2 hypotheses, and of minimal causal structure to inspect-- PTS performs a CTS and vice versa when `root-node == hypothesis-root-node` (almost always). In fact the papers general consideration is only for PTS, of the sixteen mentions of the word 'confirmatory' (as in CTS) only one is in distinction to PTS, the remaining fifteen are used in the synonymous context (of PTS).
+
+- [ ] add a diagram (plant uml?)
+
+* Question 5
+/What are some ways in which children’s causal cognition differs from adults’? What are some ways in which it is similar?/
+
+Children are born and quickly develop some signs of causal reasoning [Corrigan, R. & Denton, P. (1996). "Causal understanding as a developmental primitive." Developmental Review, 16, 162-202.] [ Sobel, D. M., & Kirkham, N. Z. (2006). Blickets and babies: The development of causal reasoning in toddlers and infants. Developmental Psychology, 42, 1103-1115.] suggesting that we have strong inate priors for causal reasoning. By the time children are 2-4 they are capable of infering the catergory of objects based on "blicketness", and arbitary abstract property of a shapes from incomplete evidence. (Gopnik & Sobel, 2000). One case where children performed noteably different from adults was a 'conjunctive' case where the blicket detector required two blickets to activate it. Here children were more likely to categorise this case correclty. One reason postulated for why this might be (Lucas, C. G., Bridgers, S., Griffiths, T. L., & Gopnik, A. (2014). is that children have a wider, more open minded hypothesis space, allowing them to make causal judgements with less interferece of prior expectations.
+
+* Quetion 6
+/What are two possible reasons why longers delays lead to weaker causal associations? Which of these reasons do you find convincing and why?/
+
+Two possible reasons that longer delays lead to weaker causal associations are,
+  1. Forgetfulness-- with a delay your working memory is more likely to forget the cause
+  2. Uncertainly over externalities-- ceteris paribus, the longer the delay, the more space for other potential causes to have been the /true/ cause.
+
+I find the second theory more convincing for the following reasons,
+
+Rats can aviod food that causes sickness hours after ingestion [Garcia, Ervin, & Koelling (1966)]. I would argue humans (and rats) account for expected time of the causal mechanisim to work. For example, you send letter A to person X and recieved a letter B from person X later that day. You assume this was not a response to letter A even though letter B temporally preceded it as you know the post office does not work that fast.
+
+[buehner & may 2004] were able to nullify the effect of weaker causal accociations from time delays by letting participants reason about obvious time delayed process such as a (slow) engery saving lightbulb to turning on. Futhermore studies such as [Greville & Buehner 2010]  showed that temporal predictability enhances judgements of causality which is also to be expected in our model. Overall the more predicatable the effect is, the stronger belief about its cause (reason 2).
+
+* Question 7
+/Seeing the sequence of events A,B,C in compatible with the possibility that A caused both B and C to occur (B<-A->C) and the possibility that A caused B which then caused C (A->B->C). Why then dioes Bramley , Gerstenberg & Lagnado's (2014) model of normative causal inference (based only on order of information) favour A->B->C over B<-A->C if this pattern is observed?/
+
+- children had a prefernce for the fork (B<-A->C) [Schultz, Gopnick & Gylmor 2007]
+  - lack of temporal information?
+  -
+
+* Question 8
+/What was a characteristic judgement error made by participants in David, Bramley & Rehder's (2020) expreiment of  on causal learning in continuous dynamic systems? What cognitive explaination for this error is supported by the model comparison.
+
+One characteristic judment error made by participants was mistaking an indirect cause for a direct one ( X->Y->Z but concluding X->Z). The cognitive explaination supporting this model is local computation (LC) [Fernbach and Sloman (2009)] where agents simplify complex causal inference problems by restricting their attention to a single hypothesis about a causal structure. This would explain our error-- participants focus on hypothesis X->Z, negelecting information from Y.
+
+I am critial of framing this difficulty to classify X->Y->Z as an "error". Firstly, even if X->Y->Z implies X->Z is technically incorrect in this model, particpants may assume this is a tautology and in the absence of corrective feedback will not develop a sensitivity to it. Secondly, participants do not know how simple the transformation function relating two variables is, so they have no reason to be suspicious if the correlation is weak and messy. Lastly, participants can only control for a single varablie, if participants could "fix" a  second variable in place, this gives the posibility directly inspecting chain dynamics. Note these criticism are not direct cisticims of LC as the corrective measures suggested would make it easier for humans to isolate a hypothesis.
+
+* Question 9
+How might the conclusions in Kemp, Goodman & Tenenbaum (2010) explain the discrepancies between normative inference and human judgements in the rocket launch scenario in Lagnado & Sloman (2002)/
+
+Humans deviated from normative inference in predicting a causal structure relating pressure, temperature and a rocket launching in [lagnado & Sloman, 2002] The conclusions of [Kemp, Goodman & Tenebaun] might sugges that prior knowledge of how rocket launches work could be interfering in our example. For example a participant might reason that you can vary temparature and pressure independently, both of which may cause the rocket launch and ignore inferences from the data that suggest otherwise.
+
+* Question 10 (w9)
+How do hypothetical and counterfactual considerations combine in shaping responsibility judgements?
+
+Resposibility judgements can be considered a combination function of pivotality and criticality. Pivotality models counterfactual considerations-- wether an agents action in question was the "difference maker". Criticality models hypothetical considerations-- how critical are an agents actions to the outcome, before the outcome is known. For example in the 2006 world cup final, Fabien Barthez, the French goalkeeper, might be considered highly pivotally responsibe for Frances eventual 5-3 loss on penalties (to Italy). However, the best player, Zinedine Zidane might be considered critically responsible as going into the game he would be expected to have the greatest impact, especially considering he was sent off for headbutting another player.
+
+In [Gerstenberg & Lagnado (2010)] they tested for preference of individuals to atribute responsibility for failure in a group task, finding that people lean most towards pivotality in reasoning about responsiblility judgements, quantified in their model by 1 over minimum number of changes needed to make the outcome counterfactually dependent on an agent.
+
+* Question 11 (w8.4)
+/Lu, Yuille, Liljeholm, Cheng and Holyoak (2008) argue that we are predisposed to expect Sparse and Strong cusal relationships. Why might this be sensible for a cogniser with limited proceding capacity?/
+
+Sparse and strong causal relationships have casues that are minimal in number and high in their predictive power. All non-deity cognisers have limited processing capacities hence they will quite naturally tend to optimise representations of information in line with the principle of entropy minimisation, the desire to 'do the most with the least' (aka. look for sparse and strong causal relationships) /Lu, Yuille, Liljeholm, Cheng and Holyoak (2008) used this to model how humans can rapidly infer a causal structure when it fit this 'generic prior', and consider how this deviates from baysian models, notibly in the
+
+and also consider the extent and specifics of how humans systematically overely on this predispostion.
+
+* Question 12 (w9)
+/What is the difference between dependency accounts of causation and procees accounts? Can they be unified?/
+
+Dependency accounts of causation consider events to be caused by the 'difference makers', in line with David Humes counterfactual definition of causality "if the first object had not been, the second object never existed" [hume, 1743] and is modelled by standard counterfactual considerations such as those discuseed by (cf. Halpern Pearl, 2005) as model complexity increases to include complex causal systems, such as over determination.
+
+Process accounts of causation assert that some kind of physical mechanism must connect a true cause to its effect such as in [Wolff 2007] which considred physical realities such as goemetry and fornce dynamics as central to humans causal reasoning.
+
+To me it doesn't seem as if these theories really conflict at all, as in a physical world, for an event to be dependently caused there must be some chain of physical relation from cause to effect, this could be considered true even in the negative case, e.g. not watering a plant causing it to die. Meanwhile, process accounts specifically help us when we can use either our innate or scientifically extended understanding of the physical world to model causality.

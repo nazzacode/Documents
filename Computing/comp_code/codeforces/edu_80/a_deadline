@@ -1,0 +1,25 @@
+# A. Deadline
+
+from sys import stdin, stdout
+import math
+
+nt = int(sys.stdin.readline())
+output = "NO"
+
+for i in range(nt):
+    n,d = map(int, stdin.readline().rstrip().split())
+    if n >= d:
+        output = "YES"
+        break
+    else:
+        n_ = d
+        for x in range(1,n-1):
+            eq = x + math.ceil(d/(x+1))
+            if eq <= n:
+                output = "YES"
+                break
+            elif eq >= n_:
+                output = "NO"
+            else:
+                n_ = eq  
+    stdout.write(output + "\n")

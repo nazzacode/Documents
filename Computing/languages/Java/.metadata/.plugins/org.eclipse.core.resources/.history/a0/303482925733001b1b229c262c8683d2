@@ -1,0 +1,11 @@
+package uk.ac.ed.inf.aqmaps;
+
+import com.esri.core.geometry.*;
+
+public class Christofides {
+
+	public static Point[] execute(Point[] vertices, Double[][] adjacencyMatrix) {
+		return null;
+	}
+
+}

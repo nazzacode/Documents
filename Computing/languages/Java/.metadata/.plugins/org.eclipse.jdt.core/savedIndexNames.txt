@@ -1,0 +1,11 @@
+INDEX VERSION 1.131+/home/nathan/Documents/Computing/Languages/Java/.metadata/.plugins/org.eclipse.jdt.core
+3513154390.index
+2789773910.index
+1284104345.index
+2314676583.index
+3320402994.index
+3171312150.index
+3761285245.index
+1070650219.index
+2740566755.index
+3536258777.index

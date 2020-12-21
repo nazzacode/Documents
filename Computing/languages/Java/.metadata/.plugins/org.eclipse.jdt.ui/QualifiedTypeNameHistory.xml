@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.mapbox.geojson.Polygon"/>
+    <fullyQualifiedTypeName name="java.awt.geom.Point2D"/>
+    <fullyQualifiedTypeName name="java.awt.geom.Point2D.Double"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+    <fullyQualifiedTypeName name="com.mapbox.geojson.Point"/>
+    <fullyQualifiedTypeName name="com.mapbox.geojson.Geometry"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.SortedMap"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+    <fullyQualifiedTypeName name="com.mapbox.geojson.MultiPoint"/>
+    <fullyQualifiedTypeName name="com.esri.core.geometry.Polygon"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.esri.core.geometry.OperatorConvexHull"/>
+    <fullyQualifiedTypeName name="uk.ac.ed.inf.aqmaps.Christofides.Christofides"/>
+    <fullyQualifiedTypeName name="uk.ac.ed.inf.aqmaps.Sensor"/>
+    <fullyQualifiedTypeName name="com.mapbox.geojson.FeatureCollection"/>
+</qualifiedTypeNameHistroy>

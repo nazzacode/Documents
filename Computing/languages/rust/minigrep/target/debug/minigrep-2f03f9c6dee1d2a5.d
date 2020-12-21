@@ -1,0 +1,1 @@
+/home/nathan/Google\ Drive/computing/rust/minigrep/target/debug/minigrep-2f03f9c6dee1d2a5: /home/nathan/Google\ Drive/computing/rust/minigrep/src/lib.rs /home/nathan/Google\ Drive/computing/rust/minigrep/src/main.rs

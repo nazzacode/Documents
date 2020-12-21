@@ -1,0 +1,67 @@
+package uk.ac.ed.inf.aqmaps;
+
+import java.lang.Math;
+
+import java.util.ArrayList;
+
+import com.esri.core.geometry.*;
+import com.esri.core.geometry.Point;
+//import com.esri.core.geometry.OperatorConvexHull;
+
+public class GeometryUtils {
+	
+	/** Description */
+	public static Double[][] generateAdjacencyMatrix( 
+			Point[] vertices, Polygon[] noFlyPolygons ) {
+
+		// Initialise adjacency matrix
+		Double[][] adjacencyMatrix = new Double[vertices.length][vertices.length];
+		
+		// Simplify: noFlyPolygons -> Convex Hull 
+		// justification: max 2 intersection points
+		Polygon[] noFlyConvexHullPolygons = new Polygon[noFlyPolygons.length];
+		for(int i=0;i<noFlyPolygons.length; i++) {
+			Polygon noFlyConvexHullPolygon = 
+					(Polygon) OperatorConvexHull.local().execute(noFlyPolygons[i], null);
+			noFlyConvexHullPolygons[i] = noFlyConvexHullPolygon;
+		}
+		
+		// Fill Adjacency Matrix
+		// with distances not passing though no-fly zones  
+		for(int i=0; i<Math.ceil(vertices.length/2);i++) {
+			for(int j=0; j<Math.ceil(vertices.length/2); j++) {
+
+				adjacencyMatrix[i][j] = getPathDistance(vertices[i], 
+						vertices[(i+1) % vertices.length], noFlyConvexHullPolygons);
+				adjacencyMatrix[vertices.length-i][vertices.length-j] 
+						= adjacencyMatrix[i][j];
+			}
+		}
+		
+		// TODO find function
+		return null;
+	}
+	/** Description */
+	public static Double getPathDistance(
+			Point point1, Point point2, Polygon[] noFlyConvexHullPolygons) {
+		Double distance = 0.0;
+		
+		for (Polygon noFlyConvexHullPolygon : noFlyConvexHullPolygons) {
+			Polyline vector = new Polyline(point1, point2);
+			// if vevtor intersects polygon
+			if (OperatorIntersects.local().execute(vector, noFlyConvexHullPolygon, null, null)) {
+
+				// distance += perimeter of min cut polygon - intersection
+				GeometryCursor cursor = OperatorCut.local().execute(false, noFlyConvexHullPolygon, vector, null, null);
+			}
+			
+			
+			if (Polygon cut = (Polygon) cursor.next();)  
+
+		}
+			
+		// 
+		return null;
+	}
+
+}

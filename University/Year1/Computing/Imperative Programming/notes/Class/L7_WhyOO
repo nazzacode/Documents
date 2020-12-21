@@ -1,0 +1,71 @@
+//in OO objects have a state and a behavior
+
+//java is a class (blueprint) based OO language
+
+new
+//creates an instance
+
+//classes are not objects; instances of classes are !
+
+API
+//what the user sees
+
+Arrays
+//special kind of objects
+myarr[3] // elements acessed by bracket notation (rather than dots)
+myarr.length //exception to the rule
+
+//objects compare instances (position in memmory), primatives compare value
+
+.equals
+//to stay on the safe size and compare states not instancea
+
+class Main {
+    public static void main(String[] args) {
+        Integer a = new Integer(5);
+        Integer b = new Integer(5);
+        System.out.println(a == b);
+    }
+}
+-> FALSE
+
+//stored in different points in memmory
+
+        System.out.println(a.equals(b));
+-> TRUE
+
+//== unreliable as intering only stores 1 byte! (+/-128)
+
+
+//OVERVIEW
+
+Primatives ==
+Obejct References ==
+Object States .equals
+
+
+
+    //USING METHODS
+
+1. Class Methods //accociated with a class; requires class name
+    mycar.startengine()
+2. Instance Methods //accociated with an object: requires object name
+    Math.random()
+
+class.method  //eneral form
+
+//class method = static method
+
+// main is a static method
+
+
+
+/////////////////// LECTURE 8 //////////////////
+
+// JVM manages memory in two different areas
+
+    // 1. Stack - local variables (less memory than heap)
+    // 2. Heap - memory on heap referenced by stack
+
+//stack overflow error if reccursion to deep
+//can add memory space to stack via code

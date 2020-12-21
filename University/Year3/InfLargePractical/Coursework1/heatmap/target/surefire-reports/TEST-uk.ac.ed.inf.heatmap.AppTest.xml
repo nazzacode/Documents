@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="uk.ac.ed.inf.heatmap.AppTest" time="0.002" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.8-internal+0-adhoc..jdk11u-jdk-11.0.810"/>
+    <property name="sun.boot.library.path" value="/nix/store/38zpq95j91w1q4kyg22sd4s20mj2c2b2-openjdk-11.0.8+10/lib/openjdk/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/nathan/Documents/University/Year3/InfLargePractical/Coursework1/heatmap"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/nathan/Documents/University/Year3/InfLargePractical/Coursework1/heatmap"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.8-internal+0-adhoc..jdk11u-jdk-11.0.810"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/nathan/Documents/Computing/Languages/Java/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4681773163069122393.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/nix/store/6j9v0jcx2pdins58ask9drg66g3ih0dm-glib-2.62.6/lib:/nix/store/khn3s8r4vyagmm2kqawsfli8jz3cwgrr-gtk+3-3.24.21/lib:/nix/store/4zmivgfad4jwfjb1l60l77cy6qxlhqgn-libXtst-1.2.3/lib:/nix/store/822bx22hb0j90hbjyf52angydsgy1cpj-webkitgtk-2.26.4/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.4.64"/>
+    <property name="user.home" value="/home/nathan"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="nathan"/>
+    <property name="java.class.path" value="/nix/store/45k8vlhzz04byyk4zgrc8bin91zw1bg6-eclipse-java-4.14/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.14.0.20191209-1923/jars/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B package"/>
+    <property name="java.home" value="/nix/store/38zpq95j91w1q4kyg22sd4s20mj2c2b2-openjdk-11.0.8+10/lib/openjdk"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.8-internal"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="N/A"/>
+    <property name="maven.home" value="/home/nathan/Documents/University/Year3/InfLargePractical/Coursework1/heatmap/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="uk.ac.ed.inf.heatmap.AppTest" name="shouldAnswerWithTrue" time="0.002"/>
+</testsuite>

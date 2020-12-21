@@ -1,0 +1,42 @@
+-----------------------------
+Unix command cheat sheet
+------------------------------ 
+
+Super+H - minimise window
+
+Super - activities view 
+
+Super+Tab - switch between windows
+Super+` - switches between windows of same application 
+
+Alt+Esc - switch between windows in current workspace 
+
+Ctrl+Alt+Tab - switches keyboard input
+
+Super+A - shows list of applications 
+
+Ctrl+Alt+arrowkey - switch between workspaces 
+
+Shift+Super+right - move window one workspace to the right 
+
+------------------------------
+    TERMINATOR
+------------------------------
+
+Ctrl+Shift+E - splits current window in 2 vertically
+
+Ctrl+Shift+O - splits window horizontally
+
+Alt+Arrow Keys - moves between windows
+
+Ctrl+Shift+Arrow Keys - resize windows 
+
+Ctrl+Shift+X - zoom into window 
+
+Ctrl+Shift+D - close single window 
+
+Ctrl+Shift+W - close all 
+
+Ctrl+Shift+t - open new tab (bettter to use a new window!)
+
+Ctrl+PageUp - switch tab

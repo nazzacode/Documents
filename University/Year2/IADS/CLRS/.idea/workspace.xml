@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2462175f-0d21-4622-ba49-1c297e5f3136" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="23e40184-c9f4-4f5f-ad42-c1baedc72117">
+    <option name="files">
+      <option value="Data Structures.ipynb" />
+    </option>
+  </component>
+  <component name="ProjectId" id="1VWamNnH6E3x1st7OOmsSupjaSN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2462175f-0d21-4622-ba49-1c297e5f3136" name="Default Changelist" comment="" />
+      <created>1577371462307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577371462307</updated>
+      <workItem from="1577371478063" duration="10538000" />
+      <workItem from="1578531713881" duration="2968000" />
+      <workItem from="1578663554441" duration="3694000" />
+      <workItem from="1578672387042" duration="1417000" />
+      <workItem from="1578876854547" duration="2471000" />
+      <workItem from="1579646556455" duration="2243000" />
+      <workItem from="1579820333116" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="209" y="324" width="605" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578532362679">
+      <screen x="0" y="27" width="1620" height="995" />
+    </state>
+    <state x="209" y="324" width="605" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1620.995@0.27.1620.995" timestamp="1578532362679" />
+    <state x="379" y="290" width="424" height="492" key="FileChooserDialogImpl" timestamp="1578917715435">
+      <screen x="0" y="27" width="1620" height="995" />
+    </state>
+    <state x="379" y="290" width="424" height="492" key="FileChooserDialogImpl/0.27.1620.995/1620.277.960.540@0.27.1620.995" timestamp="1578917715435" />
+    <state x="87" y="130" width="1016" height="738" key="SettingsEditor" timestamp="1579648202163">
+      <screen x="0" y="27" width="1620" height="993" />
+    </state>
+    <state x="87" y="130" width="1016" height="738" key="SettingsEditor/0.27.1620.993@0.27.1620.993" timestamp="1579648202163" />
+    <state x="87" y="138" width="1016" height="738" key="SettingsEditor/0.27.1620.995/1620.277.960.540@0.27.1620.995" timestamp="1578919210334" />
+    <state x="302" y="143" width="1016" height="738" key="SettingsEditor/0.27.1620.995@0.27.1620.995" timestamp="1578534662893" />
+    <state x="470" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1579820334120">
+      <screen x="0" y="27" width="1620" height="993" />
+    </state>
+    <state x="470" y="348" key="com.intellij.ide.util.TipDialog/0.27.1620.1052@0.27.1620.1052" timestamp="1578672395402" />
+    <state x="470" y="290" key="com.intellij.ide.util.TipDialog/0.27.1620.993@0.27.1620.993" timestamp="1579820334120" />
+    <state x="470" y="307" key="com.intellij.ide.util.TipDialog/0.27.1620.995/1620.277.960.540@0.27.1620.995" timestamp="1579562455969" />
+    <state x="470" y="346" key="com.intellij.ide.util.TipDialog/0.27.1620.995@0.27.1620.995" timestamp="1578531755197" />
+    <state x="205" y="194" width="613" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578534381827">
+      <screen x="0" y="27" width="1620" height="995" />
+    </state>
+    <state x="205" y="194" width="613" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1620.995@0.27.1620.995" timestamp="1578534381827" />
+    <state x="176" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1578669362140">
+      <screen x="0" y="27" width="1620" height="1052" />
+    </state>
+    <state x="176" y="249" width="672" height="678" key="search.everywhere.popup/0.27.1620.1052@0.27.1620.1052" timestamp="1578669362140" />
+    <state x="176" y="237" key="search.everywhere.popup/0.27.1620.995@0.27.1620.995" timestamp="1578534024912" />
+  </component>
+</project>

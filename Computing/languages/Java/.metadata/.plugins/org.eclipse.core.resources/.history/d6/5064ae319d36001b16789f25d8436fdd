@@ -1,0 +1,179 @@
+package uk.ac.ed.inf.aqmaps;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.esri.core.geometry.*;
+import com.esri.core.geometry.Polygon;
+
+import com.mapbox.geojson.FeatureCollection;  // use qualified 
+
+import uk.ac.ed.inf.aqmaps.Christofides.Christofides;
+import uk.ac.ed.inf.aqmaps.AStar.AStar;
+
+/**
+ * -------------- Informatics Large practial (ILP): Coursework 2 --------------
+ * 
+ * Program to create a flightpath and fly imaginary drone round the Edinburgh
+ * University campua collecting sensor readings and avoiding obstacles.
+ * 
+ * Algorithms Utilised: 1) Christofides (TSP): for aproximation of an effient
+ * sensor circuit tour 2) A* Search: for generating routes between sensors
+ * avoiding buildings 2.1) A* Heuristic: distance (incliding round obstalcle) to
+ * target.
+ * 
+ * @author @nazzacode
+ */
+public class App {
+
+    // map variables
+    private static final int DAILY_SENSORS = 33;
+    private static final double SENSOR_TOLERANCE = 0.0002; // lng/lat degrees
+
+    // drone variables
+    private static final double DRONE_STEP_SIZE = 0.0003; // lng.lat degrees
+    private static final int[] DRONE_MOVE_ANGLES = { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140,
+            150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350 };
+
+    // Map Bounding Box
+    public static Polygon createBounderiesPolygon() {
+
+        Polygon BOUNDARIES = new Polygon();
+        BOUNDARIES.startPath(-3.184319, 55.946233); // Northeast
+        BOUNDARIES.lineTo(-3.184319, 55.942617); // Southeast
+        BOUNDARIES.lineTo(-3.192473, 55.942617); // Southwest
+        BOUNDARIES.lineTo(-3.192473, 55.946233); // NorthWest
+
+        return BOUNDARIES;
+    }
+
+    /**
+     * @param args: day, month, year, starting-latitude, starting-longitude, local
+     *              server port
+     * 
+     * @throws FileNotFoundException
+     * @throws JSONException
+     */
+    public static void main(String[] args) throws FileNotFoundException {
+         // Read in args
+         String day        = args[0];
+         String month      = args[1];
+         String year       = args[2];
+         Point startPos = new Point( 
+             Double.parseDouble(args[4]),   // lat,lng args reversed 
+             Double.parseDouble(args[3]));  // to lng,lat
+         String portNumber = args[5];
+
+         // initialise bounding box 
+         Polygon BOUNDARIES = createBounderiesPolygon();
+
+         // Important filepaths
+         String serverUrl       = "http://localhost:" + portNumber;
+         String noFlyFilepath   = "/buildings/no-fly-zones.geojson";
+         String airDataFilepath = 
+         "/maps/"+year+"/"+month+"/"+day+"/"+"air-quality-data.json";
+      
+         // Read data from server
+         HttpServer server = new HttpServer(serverUrl);
+         String noFlyGeoJson = server.getFile(noFlyFilepath);
+         String airDataJson  = server.getFile(airDataFilepath);
+
+         // Parse server data to java objects
+         Polygon[] noFly           = Utils.parseNoFly(noFlyGeoJson);  // Buildings<Points>
+         ArrayList<Sensor> sensors = Utils.parseAirData(airDataJson);
+         Point[] sensorLocations   = Utils.getsensorLocations(sensors, server);
+
+
+         // Algorithm: Find flightpath
+         List<List<Point>> flightpath = findFlightpath(startPos, 
+          sensorLocations, noFly, BOUNDARIES, DRONE_MOVE_ANGLES,  
+          DRONE_STEP_SIZE, SENSOR_TOLERANCE);
+
+         // Fire up the Drone
+         System.out.println("**Drone go brrr**");
+         Drone drone = new Drone(startPos, DRONE_STEP_SIZE, DRONE_MOVE_ANGLES);
+         
+         // Fly our drone
+         drone.fly(flightpath, sensors);
+
+         // Generate output files
+         String[] flightpathLines = Utils.generateFlightpathOutput(
+         flightpath, sensors);
+        FeatureCollection readingsMap = GeojsonUtils.generateReadingsMap(
+         sensors, sensorLocations, flightpathLines);
+
+
+         // Outputs
+         // output fligthpath-DD-MM-YYYY.txt
+         String flightpathFilepath = System.getProperty("user.dir") 
+         + "/flightpath-" + day + "-" + month + "-" + year + ".txt";
+
+        try (PrintStream out = new PrintStream( 
+         new FileOutputStream(flightpathFilepath))) {
+            for ( String flightpathLn : flightpathLines) {
+                out.println(flightpathLn);
+              }
+        }
+        System.out.println( "Successfully output flightpath log to: " 
+                                                    + flightpathFilepath );
+
+
+         // output readings-DD-MM-YYYY.geojson
+         String readingsFilepath = System.getProperty("user.dir")
+         + "/readings-"+ day + "-" + month + "-"+ year + ".geojson";
+
+        try (PrintStream out2 = new PrintStream( 
+         new FileOutputStream(readingsFilepath))) {
+                out2.print(readingsMap.toJson());
+        } 
+        System.out.println( "Successfully output geojson map to: " 
+                                                    + readingsFilepath );
+
+
+        // clean up
+        System.out.println( "Drone Mission Complete: All Done!" );
+     }
+
+    /** Calcutes a flightpath circuit for the drone to follow round the sensors
+     * 
+     * @return moves along the flightpath (last elem in each list reads sensor)
+     */
+    private static List<List<Point>> findFlightpath(Point startPoint, 
+     Point[] sensorLocations, Polygon[] noFly, Polygon BOUNDARIES, 
+     int[] DRONE_MOVE_ANGLES, double DRONE_STEP_SIZE, double SENSOR_TOLERANCE){
+        // merge startPoint & sensorLocations
+        Point[] pointsToVisit = new Point[sensorLocations.length + 1];
+        pointsToVisit[0] = startPoint;
+    	for(int i=0;i<sensorLocations.length;i++) {
+    		pointsToVisit[i+1] = sensorLocations[i];
+    	}
+
+    	// generate Adjacency matrix of distances between points
+    	// (accounting for shortest path round no-fly object 
+        double[][] adjacencyMatrix = 
+        		GeometryUtils.generateAdjacencyMatrix(pointsToVisit, noFly);
+        
+        // find an optimal round trip permuation
+        // using the Christofides algorithm
+        Christofides christofides = new Christofides(false);
+        int[] routeIndices = christofides.solve(adjacencyMatrix);
+        
+        // reorder points omtimally using Christofides routeIndices
+        Point[] orderedPoints = new Point[pointsToVisit.length+1];
+        for(int i=0;i<orderedPoints.length-1;i++) {
+        	orderedPoints[i] = pointsToVisit[routeIndices[i]];
+        }
+        // make starting point also as the finishing point
+        orderedPoints[orderedPoints.length-1] = startPoint;
+
+        // generate a flightpath for our round-trip using A* search
+        List<List<Point>> flightpath = AStar.solve(orderedPoints, 
+         noFly, BOUNDARIES, DRONE_MOVE_ANGLES, DRONE_STEP_SIZE, SENSOR_TOLERANCE);
+       
+        return flightpath; 
+    }
+
+}

@@ -1,0 +1,94 @@
+#+TITLE: Algorithms & Data Structures: From Physics to Society
+
+* Heuristic
+- do something quantative where possible (learn data scraping, statistics)
+
+
+* Topic Ideas
+
+** On Keyboards
+- the left today are gleeful to exclaim that just about everything from common sense to men is the product of wetern imperialism, one thing that actually is, is keyboards.
+  + had the chinese invented keyboards....
+
+** Timeline Exploerers
+Natural way of exploring data, why aren't they more common
+- Example: developmental psychology timeline of children learing abilities
+
+** On Scientific Papers (and technical writing)
+- every paper should come with a github repository. The frontier of science is computations
+- interactivity (bret victor)
+- citations should be sortable by most recommended to least, by tag (auto generated), by citations etc,  
+- all of this would probably require a journal to inforce these new standards on the writer
+- commenty should be part of the package 
+- ideas are the first class citizens (ideas = datastructure+algorithm (macro))
+- Problem: semantic overloading, clear definitions are not always stated
+  + NOT an easy problem to solve in english, you 
+- incentive to over publish. Wouldnt it be nice if people only published when they actually discovered somthing, rather than paying people to make something up x times a year every year
+
+** On Democracy
+- P1. we dont live in very democratic democracies
+- Options:
+  a) democracy is good -> democracy++
+  b) democracy is bad -> democracy--
+  c) the illusion of democracy is good but democracy is bad -> democracy--
+  d) is complicated -> we have a serious conversation about the nature of democracy
+
+** On universities
+- we need to conceptually split 1) education & 2) research
+
+*** Education
+
+*** Research
+**** Research vs Industry
+
+** On Cognitive Science
+- what is its place? [citeeeeeeeee decline of cogsci!!]
+- define the goals
+- the definition is not to broard, but not broard enough
+  + we need to resurect some more ancient ideas of knowledge
+  + we can fold everything! into the definiton of congnitive science
+- *Meta-progress* indirect  :concept:
+  + e.g. doing things that allow cognitive science to improve- personal productivity, the stucture of academia, lifespan etc.
+
+*** Meta-Cogntive Science
+- a new branch of cognitive science based on derivatives.
+- indirectly attacking the engineering problem of ai and cognition
+- we need to build models of the models
+
+** On Tech, Silicon Vally and Startup Culture
+- Assumption: great stagnation, tyler cowan, peter tiel 
+- the one area of society there has been progress in in tech
+- where did this progress come from?
+  + technological improvements: mores law etc.. 
+  + 2nd order tools, vc funding, mindset, github, culture
+- if the second then this is exportable to the rest of culture society and industry
+
+
+** Wolfram Physics Project for the Mind?
+
+* The Structure of Documents
+
+** Literate Programming
+
+** Inspectable Elements (game design)
+
+** Metadata
+
+
+
+* Data Structures vs Data and Structures
+- which should be in the title?
+
+* Quotes
+
+** Wittgenstein
+
+** All Other
+"Before there were computers, there were algorithms, but now there are computers there are even more algorithms" - CLRS chap 0
+
+
+* Reading List
+- Joshua Bach
+- Wittgenstein
+- Karl Frixton
+- Donald E. Knuth

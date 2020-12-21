@@ -1,0 +1,22 @@
+Google Chrome shortcut cheetsheet
+
+Open browser
+Ctrl+Alt+W
+
+Open last closed tab
+ctrl + shift + T  
+
+close active tab
+ctrl + 	W
+
+switch tab 
+ctrl + tab            
+
+minimise 
+alt + space
+
+snap cursor to search bar
+ctrl + L
+
+open new tab 
+ctrl + t

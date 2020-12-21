@@ -1,0 +1,20 @@
+package uk.ac.ed.inf.aqmaps;
+
+
+import com.esri.core.geometry.*;
+import com.esri.core.geometry.Point;
+
+public class Geometry {
+	
+	/** Description */
+	public static Double[][] generateAdjacencyMatrix() {
+		// TODO find function
+		return null;
+	}
+	/** Description */
+	public static Double getIntersectionalDistance(Point point1, Point point2) {
+		// TODO find function
+		return null;
+	}
+
+}

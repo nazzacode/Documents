@@ -1,0 +1,35 @@
+package uk.ac.ed.inf.aqmaps;
+
+
+import java.util.ArrayList;
+
+import com.esri.core.geometry.*;
+import com.esri.core.geometry.Point;
+//import com.esri.core.geometry.OperatorConvexHull;
+
+public class Geometry {
+	
+	/** Description */
+	public static Double[][] generateAdjacencyMatrix( Point startPoint, 
+			Point[] sensorLocations, ArrayList<Polygon> noFlyPolygons ) {
+
+		
+		// noFlyPolygons -> Convex Hull 
+		// justification: max 2 intersection points
+		ArrayList<Polygon> noFlyConvexHullPolygons = new ArrayList<Polygon>();
+		for(Polygon noFlyPolygon : noFlyPolygons) {
+			Polygon NoFlyConvexHullPolygon = OperatorConvexHull.local().execute(noFlyPolygon);
+			
+
+			
+		}
+		// TODO find function
+		return null;
+	}
+	/** Description */
+	public static Double getIntersectionalDistance(Point point1, Point point2) {
+		// 
+		return null;
+	}
+
+}

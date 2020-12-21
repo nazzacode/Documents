@@ -1,0 +1,33 @@
+-- ADVANCED MATERIAL: COMBINATORICS --
+-- hard solve, checking all possible answers
+
+-- checks if a list is a sublist of another
+sub :: Eq a => [a] -> [a] -> Bool
+xs ‘sub‘ ys = and [ x ‘elem‘ ys | x <- xs ]
+
+
+subs :: [a] -> [[a]] -- returns all permutations of a sublist
+subs []       = [[]]
+subs (x:xs)   = subs xs ++ map (x:) (subs xs)
+
+
+ghci> subs [0,1]
+[[],[1],[0],[0,1]]
+
+    -- PERMUTATIONS
+
+splits :: [a] -> [(a, [a])]
+splits xs =
+  [ (xs!!k, take k xs ++ drop (k+1) xs) | k <- [0..n-1] ]
+  where n = length xs
+
+Ghci> splits "abc"
+[(’a’,"bc"),(’b’,"ac"),(’c’,"ab")]
+
+perms :: [a] -> [[a]]
+perms [] = [[]]
+perms (x:xs) =
+  [ y:zs | (y,ys) <- splits (x:xs), zs <- perms ys ]
+
+----------------------------------------
+--

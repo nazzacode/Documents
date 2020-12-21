@@ -1,0 +1,23 @@
+#+TITLE: Nativism & Empiricicm
+
+* Introduction
+Nativism and empiricism are polar explainations of how knowledge and personality develop
+*Nativism* essential elements in our /understanding/
+*Empiricism* knowledge is obtained through /experience/
+
+* History & Behaviorism
+- the debate emerged from 17th century
+- there was a general pro Empiricist consensus disregarding Nativism as unscientific
+- Empiricism was closely tied to /Behaviorism/
+*Behaviorism* belief that behaviour can be fully explained without (i.e. stupid)
+     - /Skinner/ argued behaviour is acquired through the principle of /stimuli -> reinforcement conditioning/
+
+* Chomsky
+Chomsky revived nativism with his work on language acquisition
+ - He noted (1) Language is extremly complex, and (2) children pick it up quickly with very little training
+ - (1) is not obvious, he showed grammatical structure is sufficiently complex to imply that a child's mastery of entails an ability to systemise beyond experience and the limit of generalisation (poverty of stimulus argument)
+
+* Evolution
+- its not sensible to talk about experiencing reality directly
+- our perceptual system reconstructs reality in a way that has benifits our system
+- /Example/ Sugar is not inately sweet and visual stimuli contain such a vast set of input data for us to interpret that we use powerful innate heuristics to distinguish from the infinity of interpretations

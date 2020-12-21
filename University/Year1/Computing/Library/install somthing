@@ -1,0 +1,4 @@
+#The standard packaging tools are all designed to be used from the command line.
+#The following command will install the latest version of a module and its
+# dependencies from the Python Packaging Index:
+python -m pip install SomePackage
