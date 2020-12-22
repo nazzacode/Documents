@@ -14,4 +14,6 @@ Nathans Diary
 
 Nathans the most amazing thing was when we just couldn't remember but then we remembered 
 
-
+22.12.2020
+----
+- on kde: putting a 'k' infront of everything makes for really good data structure, e.g. filename grouping
