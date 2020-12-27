@@ -1,0 +1,14 @@
+#+TITLE: Embodied Cognition
+
+* Introduction
+- Traditional philosophy of the mind views the brain as te sole agent of cognition
+    + Narrow Bayesian computationsal ence of: Input stimuli being procesed into output actions
+- *Embodied Cognition* much of our cognition depends on our physcial body playing a role in processing
+- Challenges old assumption of min body dualism (in the oposite way that is usually is challanged)
+- To understand the mind we must understand how the brain is embodied in the physical system
+    + NS: be careful no to overstate this paradigm
+
+* Cognitive Outsourcing
+- "vision is action guided by bodily motion"
+    + Example: Running to catch a ball outfield. You dont perform a simulated aproximation of Newtoniam physics to calculate the trajectory... youstart running, equalise the balls movement in your perceptual field, then put your hands up in the direction of the ball and track it as it falls into your hand
+    + Example: Walking is embodied; your outsourcing navigation to biomechanical complexity, momentum and gravity.

@@ -39,3 +39,4 @@ Good representational models should explain:
 - ⭐ Your mind continually presents a representation of the world before you actually get the data, the cascades prediction errors into its model for any data that doesn't fit
   + hence our perception is a representatoin of the world reflecting the interplay of bottom-up and top-down processes
   + This interplay is a baysian process of rapidly refining our perceptual predictions in light of the sensory evidence
+
