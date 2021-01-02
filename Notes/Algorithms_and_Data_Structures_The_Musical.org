@@ -66,6 +66,24 @@ Natural way of exploring data, why aren't they more common
 
 ** Wolfram Physics Project for the Mind?
 
+** Rice(ing) (Race Inhancment Consmetic Effects)
+
+*** History
+"(tag as history, you wan this as an openable window) Ricing was initiated by Asian street racers customizing their vehicles with stickers, paints, spoilers and other accessories to make their car look cool. Some do it even to stand out and/or “go faster” (meant to make them feel like their faster I guess, if that were the case, then the top car making companies should just do the same). It wasn’t invented/coined by them as it was mostly used as an insult for a while.
+
+The term “RICE” stands for Race Inspired Cosmetic Enhancment. A group of people (could be one, idk) decided to see if they could tweak their own distros like they/others did their cars. This gave rise to a community of Linux/Unix enthusiasts trying to make their distros look cooler and better than others."
+
+*** Problem:
+Software Ricing, in addopting the cheap connotations of its boy-racer namesake is holding back the ricing community from understanding its beauty and significance in the world. The idea of enhancements being cosmetic and merely consmetic for cosmetic sake rather than practical, productive, useful and inherently valuable. means of  
+
+- History: british technical workshops at the dawn of the industrial revolution
+- its the only place were people still tinker
+
+*** New Idea: Rice and Peas
+- peas arent really peas, their beans
+- beans are protien- they make you grow strong
+
+
 * The Structure of Documents
 
 ** Literate Programming

@@ -1,0 +1,43 @@
+# --- Tmux Personal Cheatsheet ---
+# ! most commands in `mod ?`
+mod key = C-a (C-b default)
+
+# General
+mod ?   List commands 
+C-d     Close split/window (no mod!)
+mod d   detach current session (send to backgroud)
+mod w   List all; sessions, windows, tabs, panes
+mod s   choose a session from list
+mod $   rename session
+mod [   copy mode (with vim bindings), supports search "/",
+
+# Layout
+mod Spc  cycle through (default layouts)
+
+# Windows (Tabs)
+mod c         create new window/tab
+mod ,         rename window
+mod n         switch next window/tab
+mod p         switch previous window/tab
+mod <number>  switch window/tab
+
+# Splits 
+mod |              Horizontal split
+mod -              Vertical split
+mod <hjkl>         move between split
+mod C-<hjkl>       resize split
+mod z              maximize split in window (toggle)
+mod }              swap pane with next
+mod {              swap pane with previous
+
+# Command Tools
+tmux ls                         list running sessions
+tmux attach -t <num | name>     attach to session
+tmux new -s <session name>      created new named session
+tmux rename-session -t 0 <new>  rename session
+
+# Replaced Defaults
+mod %              Horizontal split
+mod "              Vertical split
+mod <arrow key>    move between split
+mod C-<arrow key>  resize split
