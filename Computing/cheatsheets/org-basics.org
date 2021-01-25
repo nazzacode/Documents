@@ -1,57 +1,63 @@
-#
-#TITLE: Org Mode Basics in Doom Emacs
-#+DESCRIPTION: An org mode documnet to demonstrate org mode (otes from DT youtube)
 
-* A New Headline
+#+TITLE: Org Mode Basics in Doom Emacs
+#+DESCRIPTION: An org mode documnet to demonstrate org mode (notes from DT youtube)
+
+* A New Heading
 ** Level 2
 *** Level 3
 **** Level 4
 ***** Level 5
 ****** Level 6
-* Getting Started in Org mode =
-
+* Getting Started in Org mode
 ** Config Files
 - config fils in ~/.doom.d
-
 ** Absoloute Basics
 SPC (Space) is the main command
-M-x : (Meta(alt)-x Read org mode manual
-SPC-m-x : toggle heading
-SPC-m-i : toggle line as list
+M-x     : read org mode manual
+SPC-m-h : toggle as heading
+SPC-m-i : toggle as item
 
 - Unordered list item
-  + you can use plus aswell
-  + another list item
+  + you can se plus aswell
+write something or it will think its still part of the same list
 
 1. Ordered list item 1
 2. ordered list item 2
-
 * Motion
-g-j/g-k OR CTR-j/k : move to next/prev element
-g-h/g-l : move to parent/child element
-
+g-j/g-k or CTR-j/k : move to next/prev element (*)
+g-h/g-l            : move to parent/child element
 * Structure Editing
-C(Ctrl)-RET : insert new heading after subtree
-M-h/l : promote/demote heading
+C(Ctrl)-RET    : insert new heading after subtree
+C(Ctrl)-RET    : insert new list item if in list
+M-h/l          : promote/demote heading
 M-S(shift)-h/l : promote/demote current subtree
-M-j/k : move subtree up/down
-M-S-f/k : move line up/down
-
+M-j/k          : move subtree up/down
+M-S-f/k        : move line up/down
 * Advanced (Evil) Editing
 vae : select element
 dae : delete an element
-vaR : select a subtree
-daR : delete a subtree
-yiR : yank a subtree
-
-* Insert Snippets
-SPC-i-s
-current time: Wed Nov 11 23:59:49 2020
-* TODO learn this magic
-S-LEFT : toggle todo
-SPC-m-t : change state
-** TODO more magic
-** PROJ hello
+var : select a subtree
+dar : delete a subtree
+yir : yank a subtree
+* Insert
+SPC-i        : insert
+SPC-i-s      : insert all kinds of wonderful snippets
+current time : Wed Nov 11 23:59:49 2020
+* More Magic
+S-LEFT/RIGHT : toggle through tags (and list heads)
+** TODO
+** PROJ
+** STRT
+** WAIT
+** HOLD
+** DONE
+** KILL
+** [ ]
+** [-]
+** [?]
+** [X]
+*
+S-UP/DOWN : toggle/scroll through somthing [#A]
 * Calander etc [2/4] [50%]
 - [X] eggs
 - [ ] milk
@@ -61,13 +67,13 @@ SPC-m-t : change state
 SCHEDULED: <2020-11-12 Thu 16:00-18:00>
 
 * Agenda
-SPC-o-a : org agenda
 * Tables
 ** Creating Tables
-C-RET : create a new line in the table
-TAB/S-TAB : go foward/back a cell
+C-RET       : create a new line in the table
+TAB/S-TAB   : go foward/back a cell
 SPC-m-b-'-' : make table headline below
-S-RET : Duplicate field in cell below
+S-RET       : Duplicate field in cell below
+
 | ONE    | TWO          | THREE       | FOUR    |
 |--------+--------------+-------------+---------|
 | Its is | really crazy | how fricken | amazing |
@@ -76,14 +82,56 @@ S-RET : Duplicate field in cell below
 |        |              |             |         |
 |        |              |             |         |
 ** Table motion
-M-k : move current row up
-M-j : move current row down
-M-h : move current column left
-M-l : move current column right
-M-S-l : insert new column (above)
+M-k   : move current row up
+M-j   : move current row down
+M-h   : move current column left
+M-l   : move current column right
+M-S-l : insert new column (left)
 M-S-h : delete current column
-M-S-j : insert new row
+M-S-j : insert new row (above)
 M-S-k : delete current row
+* Word Count
+M-'-'-= : show word coun    t
+* Notes From The Org Manual
+** Visibility (folds)
+TAB   : cycle folded -> choldren -> subtree
+S-TAB : cycle  overview -> contents -> show all
+** Motion 2
+C-c C-n : org-next-visible-heading
+C-c C-p : org-previous-visible-heading
+C-c C-f : org-forward-heading-same-level
+C-c C-b : org-backward-same-level
+C-c C-u : outline-up-heading
+    Goto heading 1 level up
 
-* Nathans Shizzle
-M-= (Meta(alt)+(-)+=): show word count
+C-c C-j : org-goto-
+    Find place in document
+** Structure Editing
+M-RET : org-meta-return
+    Insert an new heading item or row. Don't really understand differece from C-RET
+C-RET : org-insert-heading-respect-contents
+    Insert a new heading at end of current subtree
+M-S-RET : org-insert-todo-heading
+C-S-RET : org-insert-todo-heading-respect-content
+M-LEFT : org-do-promote
+M-RGHT : org-do-demote
+    promote or demote heading by one level
+M-S-LEFT : org-promote-subtree
+M-S-RGHT : org-demote-subtree
+M-UPP : org-move-subtree-up
+M-DWN : org-move-subtree-down
+C-c @ : org-mark-subtree
+    select subtree
+
+C-c C-w : org-refile
+    Move region to different location
+C-c ^ : org-sort
+    sort by
+
+
+
+
+
+
+
+*
