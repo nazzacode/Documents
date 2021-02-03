@@ -1,0 +1,4 @@
+* Informatics_OS___Coursework_Spec
+:PROPERTIES:
+:NOTER_DOCUMENT: Informatics_OS___Coursework_Spec.pdf
+:END:

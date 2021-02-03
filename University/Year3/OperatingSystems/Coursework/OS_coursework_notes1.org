@@ -1,0 +1,4 @@
+#+TITLE: Operating Systems (OS) Coursework Notes
+* Coursework 1 - Device Driver for Rea-time Clock
+- to access the RTC : disable interupts
+-

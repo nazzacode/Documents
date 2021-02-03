@@ -1,14 +1,16 @@
 ## To Do
 
-- new sim for burner 
-- customise xins jumpre 
-- print ben johnston label
+- apply extension
 - see some friends
-- laptop on ebay 
-- edit gumtree
+- tak to xin about rent
+- OS coursework 1
+- get back to project
+- barbados refund
 
 ## Housekeeping (5-6)
 
+- rign virgin
+- send back surface dock
 
 ## Done
 
@@ -22,3 +24,11 @@
 - xins birthday: spa?
 - 
 - put laptop on amazon
+- new sim for burner 
+- customise xins jumpre 
+- print ben johnston label
+- edit gumtree
+- laptop on ebay 
+- get back laptop
+- laundry out drywe
+- put laundry away

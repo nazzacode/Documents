@@ -4,6 +4,7 @@
 
 * A New Heading
 ** Level 2
+C-c * : turn plain item to heading
 *** Level 3
 **** Level 4
 ***** Level 5
@@ -14,6 +15,7 @@
 ** Absoloute Basics
 SPC (Space) is the main command
 M-x     : read org mode manual
+M-S-RET : insert new item with checkbox if in list
 SPC-m-h : toggle as heading
 SPC-m-i : toggle as item
 
@@ -58,9 +60,9 @@ S-LEFT/RIGHT : toggle through tags (and list heads)
 ** [X]
 *
 S-UP/DOWN : toggle/scroll through somthing [#A]
-* Calander etc [2/4] [50%]
+* Calander etc [3/4] [75%]
 - [X] eggs
-- [ ] milk
+- [X] milk
 - [X] beer
 - [ ] fun
 
@@ -103,10 +105,9 @@ C-c C-f : org-forward-heading-same-level
 C-c C-b : org-backward-same-level
 C-c C-u : outline-up-heading
     Goto heading 1 level up
-
 C-c C-j : org-goto-
     Find place in document
-** Structure Editing
+** 2.4 Structure Editing
 M-RET : org-meta-return
     Insert an new heading item or row. Don't really understand differece from C-RET
 C-RET : org-insert-heading-respect-contents
@@ -126,12 +127,103 @@ C-c @ : org-mark-subtree
 C-c C-w : org-refile
     Move region to different location
 C-c ^ : org-sort
-    sort by
+    sort same level entires by alpha, num, time, timestamp, creation, scheduled, deadline, priority...
+** 2.6 Plain Lists
+20) [@20] how to start a list at 20
+21) Note: ARROWKEYS work with hjkl in evil
+
+M-S-RET : insert new item with checkbox if in list
+C-UPP : jumpt up paragraph
+C_DWN : jump down paragraph
+M-UPP : move subitem up
+M-DWN : move subitem down
+M-LEFT : increase indentation
+M-RGHT : decrease indentation
+M-S-LEFT : increase indentation (inc subitem)
+M-S-RGHT : decrease indentation (inc subitem)
+C-c C-c : toggle-checkbox
+C-c * : turn plain item to heading
+** 2.7 Drawers
+drawer :: associated information that you usually do not want to see. Can contain anything appart from healine and another drawer
+
+Still outside the drawer
+:DRAWERNAME:
+This is inside the drawer.
+:END:
+After the drawer.
 
 
+** 2.8 Block
+Org mode uses ‘#+BEGIN’ … ‘#+END’ blocks for various purposes from including source code
 
+** 3 Tables
+*** 3.1 Built in Table Editor
+| naem            | phone | ageee |
+|-----------------+-------+-------|
+| <l10>           |   <r> | <c6>  |
+| nathan          |       |  21   |
+| xin             |       |  21   |
+| theo            |       |  19   |
+| longius nameius |       |       |
 
+C-c | : convert to table
+C-C C-c : realign without moving point
+C-c SPC : black the field at point
+M-a : move to begginig of field or end of previous
+M-e : move to end of field or beginning of next
+C-c - : org-table-insert-hline : inserts horizontal line below
+M-RET : org-table-wrap-region
+org-table-toggle-column width : toggle shrink to 1char / specified
+org-table-skrink : shrink column width for all specified
+org-table-expand : expands all columns
+*** 3.3 Column Groups
+column groups show verical lines (which are otherwise left our in renders)
+- indicated with row beginning "/"
 
+| N | N^2 | N^3 | N^4 |   sqrt(n) | sqrt[4](N) |
+|---+-----+-----+-----+-----------+------------|
+| / |   < |     |   > |         < |          > |
+| 1 |   1 |   1 |   1 |         1 |          1 |
+| 2 |   4 |   8 |  16 | 1.4142136 |  1.1892071 |
+| 3 |   9 |  27 |  81 | 1.7320508 |  1.3160740 |
+|---+-----+-----+-----+-----------+------------|
+#+TBLFM: $2=$1^2::$3=$1^3::$4=$1^4::$5=sqrt($1)::$6=sqrt(sqrt(($1)))
+*** 3.5 The Spreadsheet
+**** 3.5.1 References
+C-c ? : org-table-field-info (gives row/col info)
 
+Standard representation:
+    @ROW$COL
+**** TODO 3.5.2-3.5.10
+*** 3.6 Org Plot <<My Target>>
+#+PLOT: title:"Citas" ind:1 deps:(3) type:2d with:histograms set:"yrange [0:]"
+| Sede      | Max cites | H-index |
+|-----------+-----------+---------|
+| Chile     |    257.72 |   21.39 |
+| Leeds     |    165.77 |   19.68 |
+| Sao Paolo |     71.00 |   11.50 |
+| Stockholm |    134.19 |   14.33 |
+| Morelia   |    257.56 |   17.67 |
+** 4 Hyperlinks
+*** 4.1 Link Format
+The general link format, however, looks like this:
+[[LINK][]] <- DESCRIPTION
 
-*
+[[LINK][DESCRIPTION]]
+*** 4.2 Internal Links
+- [[#my-custom-id]] (inside double square brackets) specifically targets the entry with the ‘CUSTOM_ID’ property set to ‘my-custom-id’
+- [[*4 Hyperlinks]] (in double square brackets) points to the headline with the name
+- When the link does not belong to any of the cases above, Org looks for a dedicated target: the same string in double angular brackets, like ‘<<My Target>>’.
+  + [[My Target]]
+- If no dedicated target exists, the link tries to match the exact name of an element within the buffer. Naming is done, unsurprisingly, with the ‘NAME’ keyword, which has to be put in the line before the element it refers to, as in the following example
+
+#+NAME: My Target
+| a  | table      |
+|----+------------|
+| of | four cells |
+
+*** 4.3 Radio Targets (Defintions)
+Has the ability to turn any appereance of a target name into a link.
+- <<<Radio Target>>>
+- radio target
+- [ ]
