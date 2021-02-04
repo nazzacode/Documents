@@ -1,0 +1,3 @@
+#+TITLE:  First Org Mode Ideas
+
+*

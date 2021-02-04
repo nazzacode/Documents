@@ -7,6 +7,12 @@
 
 ## Doing
 
+- apply extension
+- see some friends
+- tak to xin about rent
+- OS coursework 1
+- get back to project
+- barbados refund
 
 ## Housekeeping (5-6pm)
 
@@ -43,3 +49,7 @@
 - print ben johnston label
 - see some friends
 - edit gumtree
+- laptop on ebay 
+- get back laptop
+- laundry out drywe
+- put laundry away

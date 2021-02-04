@@ -1,0 +1,16 @@
+#+TITLE: Emacs TODO
+
+* Packages [0/0]
+- pdf viewing
+  + [ ] pdf-tools
+  + [ ] interleave or alternative
+  + [ ] gnplot
+  + [ ] org-randomnote : open a randomn org note
+  + [ ] tabs please tabs.
+* Config
+- [ ] org-startup-with-inline-images
+  + Then images will automatically show up where you want them
+* Functions
+- [ ] make new tags autoadd to '#+TAGS:'
+* Question
+-  [ ] how to expand folded '...' (tab??)

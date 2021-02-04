@@ -183,3 +183,8 @@ SPC: find file
         v vsplit
         w next
         | set width
+
+C-x C-= inc txt font size
+C-x C-- dec txt font size
+
+M-x align-regex ":" align selection on :

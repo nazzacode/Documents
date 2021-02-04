@@ -1,0 +1,44 @@
+#+TITLE: KDE Custom Scheme Cheatsheet
+Meta (Win) = M, Ctrl = C, Alt = A, Shift = S, Tab = T, Natural Number = N
+
+| Key           | Action                 |
+|---------------+------------------------|
+|               | *Basics*               |
+| M + S + c     | close window           |
+| A + F4        | close window           |
+| A + T         | next  window           |
+| A + S + T     | prev  window           |
+| M + T         | next  window app       |
+| M + S + T     | prev  window app       |
+|               |                        |
+| ( M + A )     | *Switching Desktops*   |
+| M + A + h     | switch 1 desktop left  |
+| M + A + l     | switch 1 desktop right |
+| M + A + j     | walk desktop list      |
+| M + A + k     | walk desktop list rev  |
+| M + N         | to desktop N           |
+|               |                        |
+| ( M + A )     | *Move Win to Desktop*  |
+| M + A + S + h | move win desktop left  |
+| M + A + S + l | move win desktop right |
+| M + S + N     | win to desktop N       |
+|               |                        |
+| ( M + S )     | *Overview Displays*    |
+| M + S + d     | show desktop           |
+| M + S + g     | show desktop grid      |
+| M + S + w     | show all windows       |
+|               |                        |
+| ( M + C )     | *Open Program*         |
+| M +  SPC      | k-runner               |
+| C + Esc       | sys activities         |
+| M + Print     | screenshot             |
+| M + S + Print | screenshot rectangle   |
+| M + C + d     | dolphin filemanager    |
+| M + C + y     | yakuke                 |
+| F12           | yakuke                 |
+| M + C + .     | emoji selector         |
+| M + C + c     | chrome                 |
+| M + C + o     | okular                 |
+| M + C + e     | emacs                  |
+| M + C + t     | konsole (terminal)     |
+|               |                        |

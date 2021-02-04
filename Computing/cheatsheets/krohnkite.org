@@ -1,0 +1,31 @@
+#+TITLE: Krohnkite Cheatsheet
+
+| Key        | Action               |
+| ---------- | -------------------- |
+| M + j      | Focus Down/Next      |
+| M + k      | Focus Up/Previous    |
+| M + h      | Focus Left           |
+| M + l      | Focus Right          |
+|            |                      |
+| M + S + j  | Move Win Down/Next   |
+| M + S + k  | Move Win Down/Next   |
+| M + S + h  | Move Win Left        |
+| M + S + l  | Move Win Right       |
+|            |                      |
+| M + C + j  | Grow Height          |
+| M + C + k  | Shrink Height        |
+| M + C + h  | Shrink Width         |
+| M + C + l  | Grow Width           |
+|            |                      |
+| M + I      | Inc Master Count     |
+| M + D      | Dec Master Count     |
+| M + F      | Toggle Floating      |
+| M + S + F  | Toggle All Floating  |
+| M + \      | Cycle Layout         |
+|            |                      |
+| M + Ret    | Set as Master        |
+|            |                      |
+| M + T      | Use Tile Layout      |
+| M + M      | Use Monocle Layout   |
+| *unbound*  | Use Spread Layout    |
+| *unbound*  | Use Stair Layout     |

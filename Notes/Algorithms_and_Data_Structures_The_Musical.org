@@ -1,11 +1,19 @@
 #+TITLE: Algorithms & Data Structures: From Physics to Society
+#+TAGS:
+** TODO make new tags autoadd to #+TAGS:
+** TODO go through this document while rereading the org manual!!
 
 * Heuristic
 - do something quantative where possible (learn data scraping, statistics)
 
-
 * Topic Ideas
+** Thesis: The Addoption Sucess of "superior technology" is first order in reagrds to the efficiency of the learning environment :thesis:
+- "a Gui is just an inbuit tutorial"
+*** TODO make quotes work better (use the tags)
 
+** A Review of Diagram Communication
+- what diagrams are used
+- what information can they represent
 ** On Keyboards
 - the left today are gleeful to exclaim that just about everything from common sense to men is the product of wetern imperialism, one thing that actually is, is keyboards.
   + had the chinese invented keyboards....

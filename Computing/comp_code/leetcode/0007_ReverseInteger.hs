@@ -1,5 +1,5 @@
 {-
-Leetocode 0006: Given a 32-bit signed integer, reverse the digits of the integer 
+Leetocode 0007: Given a 32-bit signed integer, reverse the digits of the integer 
 
 Example:
 Input: x = 123
