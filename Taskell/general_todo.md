@@ -1,14 +1,30 @@
 ## To Do
 
-- new sim for burner 
-- customise xins jumpre 
-- print ben johnston label
-- see some friends
 - laptop on ebay 
-- edit gumtree
+- laptop on fb
+- email uni about IDB mark
+- calibre to laptop!
 
-## Housekeeping (5-6)
+## Doing
 
+
+## Housekeeping (5-6pm)
+
+- download to phone:  fit-to-fly & entry document
+
+## Payents
+
+- -£5 -> mitchell (Adams birthday)
+- +£45 amazon seller
+- +£120 amazon charger
+- +£50 virgin wines
+    > 0343 224 1001
+- cancel ionos
+- email BA
+    * [ ] £80 test
+    * [ ] £9+6.50 tram travel
+    * [ ] accomodation costs?
+    * [ ] complain on twitter
 
 ## Done
 
@@ -22,3 +38,8 @@
 - xins birthday: spa?
 - 
 - put laptop on amazon
+- new sim for burner 
+- customise xins jumpre 
+- print ben johnston label
+- see some friends
+- edit gumtree

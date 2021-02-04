@@ -24,7 +24,7 @@ reverseInteger x
 -- Testing
 prop_01 = reverseInteger 123 == 321
 prop_02 = reverseInteger (-123) == (-321)
-prop_03 = reverseInteger 0 == 0
+prop_03 =reverseInteger 0 == 0
 
 {-
 Complexity Anaylsis:

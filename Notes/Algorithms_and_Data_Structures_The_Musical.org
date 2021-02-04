@@ -17,12 +17,12 @@ Natural way of exploring data, why aren't they more common
 ** On Scientific Papers (and technical writing)
 - every paper should come with a github repository. The frontier of science is computations
 - interactivity (bret victor)
-- citations should be sortable by most recommended to least, by tag (auto generated), by citations etc,  
+- citations should be sortable by most recommended to least, by tag (auto generated), by citations etc,
 - all of this would probably require a journal to inforce these new standards on the writer
-- commenty should be part of the package 
+- commenty should be part of the package
 - ideas are the first class citizens (ideas = datastructure+algorithm (macro))
 - Problem: semantic overloading, clear definitions are not always stated
-  + NOT an easy problem to solve in english, you 
+  + NOT an easy problem to solve in english, you
 - incentive to over publish. Wouldnt it be nice if people only published when they actually discovered somthing, rather than paying people to make something up x times a year every year
 
 ** On Democracy
@@ -56,15 +56,76 @@ Natural way of exploring data, why aren't they more common
 - we need to build models of the models
 
 ** On Tech, Silicon Vally and Startup Culture
-- Assumption: great stagnation, tyler cowan, peter tiel 
+- Assumption: great stagnation, tyler cowan, peter tiel
 - the one area of society there has been progress in in tech
 - where did this progress come from?
-  + technological improvements: mores law etc.. 
+  + technological improvements: mores law etc..
   + 2nd order tools, vc funding, mindset, github, culture
 - if the second then this is exportable to the rest of culture society and industry
 
+ :def: Programatical -- isomorphisms betweeen programming the rest of the world.
+
+*** Why Programatical Matters
+Computation is real like physical universe.
+Computation governs the world of structure, information (:def:), representation and
+Our physical world is Compational
+
+Comptation is :def: substrate independent.
+Programming is the fundamental methodilogy of
+Doing things programatically is essentially a synonym for structuring,manipulating information and  things well.
+
+ :def: Programming is the study of  Can be used to structure the world in
+
+*** github vs peer-review
+
+| *github*                                      | *peer-review*                                      |
+| fast product cycle, can be seen before stable | slow product cycle, publication can take months    |
+| errors/correction are viewed positivly        | corrections are undermining and damaging           |
+| corrections and updates are continuous        | corrections                                        |
+| tools for                                     |                                                    |
+| spohisticated algorithms on graph structure   | basic algorithms: pagerank + references + journals |
+| transparent, cloneable, proof by compilation  | secretive, blackbox, not-reproducible              |
+| README file: detailed guide as standard       | abstract and keywords. Basic AF                    |
+| (put a funny one)                             |                                                    |
+
+- DEFINITION README
+- EXAMPLE: README
+- no easy way to find the most import
+
+This is not just an abstract comparision. :recomendation/policy: It would be non trivial for any large institution to move the entirety of its internal reserch onto github and it would get considerable competive advantages.
+
+** Post Kantian Metaphysics - The Numenal Complexity Zoo
+Kant claimed that
+- TODO find an expert at the university
+
+** A very small collection of praise for acedemia
+- academics have a beautiful culture of answering emails and giving theyre time to anyone who takes an interest in their
+
+**
+
+
+
+** On the Nececcity of Young People in Positions of Power for Revolutionary Thinking
+:predition: young people correlate positivly with revolutionary thinking and change
+Problem: we dont have young people in positions of power (prove)
+
+*** Theory
+- older people have a shorter time horizon for the benefit of change
+  - it cant really get worse to get better
+- old people are more preconditioned to the status quo
+
+*** Andecdotal Examples
+
+
+
+*** Possible Evidence
+- [ ] data on participan
+- [ ] psychological data on radical views
 
 ** Wolfram Physics Project for the Mind?
+
+** On a Little Data Science Knowhow
+Academic theory and thoerist have a number of related problems arround not being sufficiently quantitive. However the web
 
 ** Rice(ing) (Race Inhancment Consmetic Effects)
 
@@ -74,7 +135,7 @@ Natural way of exploring data, why aren't they more common
 The term “RICE” stands for Race Inspired Cosmetic Enhancment. A group of people (could be one, idk) decided to see if they could tweak their own distros like they/others did their cars. This gave rise to a community of Linux/Unix enthusiasts trying to make their distros look cooler and better than others."
 
 *** Problem:
-Software Ricing, in addopting the cheap connotations of its boy-racer namesake is holding back the ricing community from understanding its beauty and significance in the world. The idea of enhancements being cosmetic and merely consmetic for cosmetic sake rather than practical, productive, useful and inherently valuable. means of  
+Software Ricing, in addopting the cheap connotations of its boy-racer namesake is holding back the ricing community from understanding its beauty and significance in the world. The idea of enhancements being cosmetic and merely consmetic for cosmetic sake rather than practical, productive, useful and inherently valuable. means of
 
 - History: british technical workshops at the dawn of the industrial revolution
 - its the only place were people still tinker
@@ -83,10 +144,27 @@ Software Ricing, in addopting the cheap connotations of its boy-racer namesake i
 - peas arent really peas, their beans
 - beans are protien- they make you grow strong
 
+* On the Future of Education Knowledge Discemination
+:Heuristic (label, auto number w/ optin to name):
+** Implications for Futher Education (Universities)
+
+* Lang a.k.a Codespeak creole
+[Definition!!] creole  (dropdown/inspect)
+Coders communicate in their own language.
+It is far more sophisticated than the tenchial jargon vocablary avaliable to lawyers,engineers etc.
+
+Examples
+- syntax evolution trees (eg C language )
+- latex (tell the story of its creation)
+
+Never has it been studied or standardised as an entity within itself.
+:policy: someone should make a coder ditionary with all the standard abreviations and symbols
 
 * The Structure of Documents
 
 ** Literate Programming
+*** Literate Programming vs Latex PDF Documents
+The defacto standard for academic publication is Latex PDF documents constisting of and title, abstract, keywords, body, and referecneces. The body may include methodologies, results, discussion, etc.
 
 ** Inspectable Elements (game design)
 
@@ -104,9 +182,19 @@ Software Ricing, in addopting the cheap connotations of its boy-racer namesake i
 ** All Other
 "Before there were computers, there were algorithms, but now there are computers there are even more algorithms" - CLRS chap 0
 
+* Formalisation of My Notetaking/Publication System
+
+* Meta-analysis aka Discussion
+- my format is a fundamentally better structure for
+
 
 * Reading List
 - Joshua Bach
 - Wittgenstein
 - Karl Frixton
 - Donald E. Knuth
+
+* Notes
+- graphs have weights
+- why cant contents pages have multidimentional (3D) Views
+  + working memory is a fnudamental limit

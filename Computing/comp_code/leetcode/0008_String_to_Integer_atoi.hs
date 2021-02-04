@@ -31,40 +31,32 @@ Examples
   Output 0
 -}
 
-module LeetCode0007ReverseInteger (reverseInteger) where
+module LeetCode0008Atoi (atoi) where
 
+import Data.Char (isDigit)
 import Data.Maybe
 import Test.QuickCheck
+import Text.Read (readMaybe)
 
-atoi :: String -> Int
-atoi (x:xs) isSigned32int  takeWhile (==" ") 
+atoi :: String ->Int
+atoi xss = case mabyeInt xs of 
+  Just xs -> return to32signed xs
+  Nothing -> return 0
+  where 
+    xs takeWhile (\x -> (x=='-') || isDigit x) $ dropWhile (==' ') xs  -- nb: " " not allowed
+    maybeInt x = readMaybe x :: Maybe Int
 
--- strip whitespace 
--- strip from tail
-  -- if converts to integer return
+to32signed :: Int->Int
+to32signed x
+  | x >  2^31 - 1 =  2^31 -1
+  | x < -2^31     = -2^31
 
-case mabyeInt x of 
-  Just n  ->  
-  Nothing ->  
-          o
-  where
-    maybeInt = readMaybe char :: Maybe Int
-
-isSigned32int :: Int 
-
-
-
-
-reverseInteger x
-  | ret > 2^31 = 0 
-  | otherwise = sign * ret
-  where sign = if x < 0 then -1 else 1   
-        ret  = read.reverse.show.abs $ x 
 
 -- Testing
-prop_01 = reverseInteger 123 == 321
-prop_02 = reverseInteger (-123) == (-321)
-prop_03 = reverseInteger 0 == 0
+prop_01 = atoi "   -42" == -42
+prop_02 = atoi "4193 with words" = 4193
+prop_03 = atoi "words and 987" = 0
+prop_4 = atoi 
 
 {-
 Complexity Anaylsis:

@@ -1,0 +1,12 @@
+#+TITLE: Project Plan
+
+* Plan
+
+* Wristband vs Handheld Keyboard
+
+|        | Handheld Keyboard          | Wristband                                                        |
+| steps  | mould + keys + electronics | ergonomics + electronics + AI HPN + gesture encoding + interface |
+| market | known                      | unknown                                                          |
+| future | intermediary               | ultimate                                                         |
+| fwp    | slow                       | fast                                                             |
+| mvp    | quick (==fwp)              | very slow                                                        |

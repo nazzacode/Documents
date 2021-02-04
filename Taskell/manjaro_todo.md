@@ -1,15 +1,15 @@
 ## To Do
 
-- opening apps shortcuts
-- fix emacs
-- setup calibre
-- tiling (kron vs k)
+- zsh
+- port bookmarks ff->chrome
 - setup emacs
     > setup emacs
     * [ ] setup emacs
+- vscode gnome menus?
+- setup calibre
+- tiling (kron vs k) vs (xmon vd ...)
 - switch to ubuntu font
 - konsole background
-- zsh
 - rofi?
 - transparent panel
 - aliases
@@ -18,6 +18,8 @@
     * [ ] cheatsheets like man pages
     * [ ] 
 - spotify
+- obsidian graphs
+- symbols font
 
 ## Doing
 
@@ -28,3 +30,6 @@
 - setup neovim
 - kde cheatsheet
 - tmux
+- opening apps shortcuts
+- fix emacs
+- configure emacs
