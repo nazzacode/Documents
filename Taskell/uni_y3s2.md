@@ -6,13 +6,13 @@
 
 ## (OS) Operating Systems
 
-- download book
-- get book in calibre
+- Coursework 2 - The Scheduler [10%]
+    @ 2021-02-23 16:00 UTC
 - Lectures
     * [x] 1.1 - overview
     * [x] 1.2 - intro and structure
-    * [ ] 2.1 - structure and IO subsystems
-    * [ ] 2.2 - coursework 1
+    * [x] 2.1 - structure and IO subsystems
+    * [x] 2.2 - coursework 1
     * [ ] 3.1 - processes
     * [ ] 3.2 - threads
     * [ ] 4.1 - scheduling
@@ -33,12 +33,6 @@
     * [ ] 12.1 - data-centre tech
     * [ ] 12.2 - review 2
 - Textbook
-- Coursework 1 - Real Time Clock [7.5%]
-    @ 2021-02-02 16:00 UTC
-    * [ ] read/watch lectures
-    * [ ] try to fiddle with pastebin
-- Coursework 2 - The Scheduler [10%]
-    @ 2021-02-23 16:00 UTC
 - Coursework 3 - The Memory Allocator [20%]
     @ 2021-03-09 16:00 UTC
 - Coursework 5 - File System Driver [12.5%]
@@ -47,9 +41,35 @@
 
 ## (CCN) Computational Cognitive Neuroscience
 
+- Assignment 1
+    @ 2021-02-10 16:00 UTC
+    * [ ] references!
+    * [ ] look at lectures 
+    * [ ] look over lab 1
+    * [ ] look over lab 1 solutions
+    * [ ] read: Tsodysky et al., 1997
+    * [ ] reaseach ISN
+    * [ ] look at piazza
+    * [ ] abstract?
+    * [ ] org mode?!?
 
 ## (PAC) Perception Action Cognition
 
+- Midterm Essay  [30%]
+    @ 2021-02-16 12:00 UTC
+    > 100 words.
+- Final Essay [70%]
+    @ 2021-04-15 11:00 UTC
+    > 200 words.
+    * [ ] go to the damn PPLS writing centre
+    * [ ] 
+- you can ask for your own question but you need permision - get learning!!
 
 ## Done
 
+- Coursework 1 - Real Time Clock [7.5%]
+    * [x] read/watch lectures
+    * [x] try to fiddle with pastebin
+    * [x] google header files
+- download book
+- get book in calibre

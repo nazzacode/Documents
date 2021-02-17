@@ -1,36 +1,33 @@
 ## To Do
 
-- laptop on ebay 
+- laptop on ebay
 - laptop on fb
 - email uni about IDB mark
-- calibre to laptop!
+- new phone
+- love xini even MORE
 
 ## Doing
 
-- apply extension
 - see some friends
 - tak to xin about rent
-- OS coursework 1
-- get back to project
 - barbados refund
 
 ## Housekeeping (5-6pm)
 
-- download to phone:  fit-to-fly & entry document
-
-## Payents
-
-- -£5 -> mitchell (Adams birthday)
-- +£45 amazon seller
-- +£120 amazon charger
-- +£50 virgin wines
-    > 0343 224 1001
-- cancel ionos
 - email BA
     * [ ] £80 test
     * [ ] £9+6.50 tram travel
     * [ ] accomodation costs?
     * [ ] complain on twitter
+- mail amazon srface charger
+- move money to santandair
+
+## Payents
+
+- SANTANDAIR STUDENT ACCOUNT
+- -£5 -> mitchell (Adams birthday)
+- +£45 amazon seller
+- cancel ionos
 
 ## Done
 
@@ -53,3 +50,14 @@
 - get back laptop
 - laundry out drywe
 - put laundry away
+- calibre to laptop!
+- apply extension
+- get back to project
+- download to phone:  fit-to-fly & entry document
+- ,
+- +£50 virgin wines
+    > 0343 224 1001
+- love xini lots
+- check uni essays/deadlines
+- OS coursework 1
+- +£120 amazon charger

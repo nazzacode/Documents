@@ -1,16 +1,19 @@
 #+TITLE: Emacs TODO
 
-* Packages [0/0]
+* TODO Packages [0/0]
 - pdf viewing
-  + [ ] pdf-tools
-  + [ ] interleave or alternative
+  + [X] pdf-tools
+  + [X] interleave or alternative
   + [ ] gnplot
-  + [ ] org-randomnote : open a randomn org note
-  + [ ] tabs please tabs.
-* Config
-- [ ] org-startup-with-inline-images
-  + Then images will automatically show up where you want them
-* Functions
+  + [ ] org-randomnote :: open a randomn org note
+  + [X] tabs please tabs.
+  + [ ] centaur tabs
+* TODO Config
+- [ ] org-startup-with-inline-images :: images will automatically show up where you want them
+- [ ] fix =org-latex-preview= background
+* TODO Functions
 - [ ] make new tags autoadd to '#+TAGS:'
+* TODO Org
+- [ ] how to reload all latex fragments on theme change
 * Question
 -  [ ] how to expand folded '...' (tab??)

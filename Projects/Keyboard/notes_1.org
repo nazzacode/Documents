@@ -1,0 +1,37 @@
+#+TITLE: Handheld Keyboard Project Notes
+
+* Kanban
+** TODO
+*** [ ] BUY Key Switches x5
+*** [ ] BUY ruler
+*** [ ] PRINT OpenSCAD switches
+**** [ ] export to inventor?
+*** [ ] MODEL casing 1 (simple cuboid)
+**** [ ] correct dims for key switches
+**** [ ] \approx correct dims for (my) hand
+*** [ ] program a keyboard
+*** [ ] buy a programmable 60% keyboard
+
+** Doing
+*** PROJ Build the simplest keyboard possible
+** DONE
+*** [X] DOWNLOAD inventor
+*** download windows
+
+** To Research
+*** [ ] joint motion
+*** [ ] three way switches
+
+* General Notes
+
+** Comparision: Handheld Keyboard vs EMG Wristband
+
+|        | *Handheld Keyboard*          | *EMG Wristband*                                                    |
+|--------+----------------------------+------------------------------------------------------------------|
+| steps  | mould + keys + electronics | ergonomics + electronics + AI HPN + gesture encoding + interface |
+| market | known                      | unknown                                                          |
+| future | intermediary               | ultimate                                                         |
+| fwp    | slow                       | fast                                                             |
+| mvp    | quick                      | very slow                                                        |
+
+/Conclusion/: Keyboard -> Capital -> Wristband

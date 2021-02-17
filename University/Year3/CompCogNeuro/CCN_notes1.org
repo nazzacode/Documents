@@ -1,0 +1,7 @@
+#+TITLE: Computational Cognitive Science - Notes 1
+
+* Definitions :def:
+** <<<Interneurons>>>
+*Interneurons* (also called *relay neurons*,  *association neurons*,  *connector neurons* , etc.) are neurons that connect two brain regions i.e. not direct motor neurons or sensory neurons.  Interneurons intergrate regions of information processing together
+    - Interneuons main function is to provide a *neural circuit*, cunducting flow of signals or information between a sensory neuron and motor neuron.
+    - In the neocortex (80% of human brain) roughly, *20-30% of neurons are interneurons*

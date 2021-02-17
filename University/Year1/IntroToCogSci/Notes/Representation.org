@@ -1,12 +1,12 @@
 #+TITLE: Representation
 
-* 1. Imtroduction: What is a Mental Representation
+* Imtroduction: What is a Mental Representation
 A *mental representation* is a structure about something internal that bears information.
 - Representational models try to map the relationship between the input data to our perception
 - Intrest in representational models of cognition is reasonably recent (due to the popularty of behaviourism)
 - Modeling /representational systems/ is now at the forefront of Cognitive Science following the maturing of Evolutionary thinking in psycholgy
 
-* 2. Isomorphism & Homomorphism
+* Isomorphism & Homomorphism
 Good representational models should explain:
     - what aspects of the world are being modelled
     - what aspects of mind are doing the modelling

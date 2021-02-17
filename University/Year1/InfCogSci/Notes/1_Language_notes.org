@@ -1,0 +1,104 @@
+#+TITLE: InfCogSci Notes 1 - Language
+#+OPTIONS: toc:4
+
+* TABLE OF CONTENTS :toc:
+:PROPERTIES:
+:UNNUMBERED:
+:END:
+- [[#words--rules][Words & Rules]]
+  - [[#statistics][Statistics]]
+  - [[#context-free-grammar][<<<Context Free Grammar>>>]]
+  - [[#recursion][<<<Recursion>>>]]
+  - [[#regular-vs-irregular-verbs][Regular vs Irregular Verbs]]
+  - [[#rule-based-vs-connectionist][Rule Based vs Connectionist]]
+- [[#human-language-aquisition][Human Language Aquisition]]
+  - [[#development-of-language][Development of Language]]
+  - [[#word-meaning-clues][Word Meaning Clues]]
+  - [[#past-tense][Past Tense]]
+  - [[#word-segmentation][Word Segmentation]]
+  - [[#syntactic-categories][Syntactic Categories]]
+- [[#computational-models][Computational Models]]
+  - [[#perceptrons--neural-networks][Perceptrons & Neural Networks]]
+  - [[#probabilistic-learning-algorithms][Probabilistic Learning Algorithms]]
+  - [[#rule-based-learning][Rule Based Learning]]
+
+* Words & Rules
+** Statistics :stat:
+- Young Children Learn 6-10 new words/day
+- There are \approx 150 irregular verbs in english
+
+** <<<Context Free Grammar>>> :def:
+In formal language theory, a context-free grammar is a certain type of formal grammar: a set of production rules that describe all possible strings in a given formal language.
+
+** <<<Recursion>>> :def:
+Internally nested Structure
+ - Example: Grammar rule entities can contain examples of themselves
+
+** Regular vs Irregular Verbs
+*** Words and Rules 1 :thrm:
+If a word is stored, then the rule is blocked, else it is applied
+  + lmma :: memory is faster than aplying the rule
+
+** Rule Based vs Connectionist
+Is the mind more /rule based/ (Words and Rules) or more /connectionist/ (neural network)?
+*Conclusion* : the truth lies somewhere in between
+
+* Human Language Aquisition
+** Development of Language
+1. Vegetative sounds (0-6 weeks)
+2. Cooing (6 weeks)
+3. Laughter (16 weeks)
+4. Vocal Play (16 weeks-6 months)
+5. Babbling (6-10 months)
+6. Single word utterances (10-18 months)
+7. Two word utterances (18 months)
+8. Telegraphic (2 years)
+9. Full sentences (2+ years)
+10. A lot of date variation between children
+11. Somewhere in the 'gap' children develop a concept of what a word is
+
+*** <<<Mental lexicon>>> :def:
+Associating sound sequences with meaning and their syntax
+
+** Word Meaning Clues
+- Socio-pragmatic clues :: eye gaze, facial expression, inference of semantic intention
+- Child directed speech :: falicitator focus on child
+- Internal assumptions :: whole object asumptions etc.
+- Syntactic bootstrapping :: exploiting syntactic structure to discover word meaning
+** Past Tense
+See [[Regular vs Irregular Verbs ]]
+
+** Word Segmentation
+Words in a language create:
+- Stress patterns
+- Phonetic constraints (e.g. every word must constain a vowel)
+- Statistical regularities
+- Social factors
+-> *Words create regularities in the sound sequences of language*
+
+** Syntactic Categories
+See Category Theory <- TODO link
+
+* Computational Models
+** Perceptrons & Neural Networks
+***   Statistics :stat:
+**** Fomalised by Frank Rosenblatt in 1958 at the Cornell Aeronautical Lab
+*** <<<Perceptron>>> :def:
+The perceptron is a simple mathematical model of a biological neuron. In machine learning the perceptron is used as an algorithm for binary classifiers and stacked together to form a *Multilayer Perceptron* which are used as the basis for many modern (Feed-forward) *Artifical Neural Networks*.
+
+A perceptron consists of a number of inputs (/input vector/, /weights/) -> combined in a weighted sum -> output through a non-linear step function.
+
+Basic Equation where $x$ is a vector:
+\begin{equation}
+\begin{equation}
+f(x) =
+   \begin{cases}
+     1 & \quad \text{if } w \cdot x + b > 0; \\
+     0 & \quad \text{otherwise}.
+   \end{cases}
+\end{equation}
+
+
+** Probabilistic Learning Algorithms
+
+** Rule Based Learning

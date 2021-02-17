@@ -1,36 +1,28 @@
 ## To Do
 
-<<<<<<< HEAD:Taskell/manjaro_todo.md
-- zsh
-- port bookmarks ff->chrome
-- setup emacs
-    > setup emacs
-    * [ ] setup emacs
-- vscode gnome menus?
-- setup calibre
-- tiling (kron vs k) vs (xmon vd ...)
+- icons in desktop bar
+- zsh theme
 - switch to ubuntu font
-- konsole background
+- switch to ff
+- rice ff
+- theme vscode -> grey
+- quote -> term
+    * [ ] put quotes in filesys
+    * [ ] find the best term app for scripting quote -> term
+    * [ ] script!
+    * [ ] 
 - rofi?
-- transparent panel
-=======
-- switch to ubuntu font
->>>>>>> 40362ffba7963af245ee9631042244d572fb534c:Taskell/linux.md
 - aliases
     * [ ] vim (nvim)
     * [ ] tsk (taskell)
     * [ ] cheatsheets like man pages
     * [ ] 
-- spotify
-<<<<<<< HEAD:Taskell/manjaro_todo.md
 - obsidian graphs
-- symbols font
-=======
-- mv tsk mngr to     side panel
-- kronkite from all sides
+- symbols and emojis?
+- yakuke from all sides
 - kronkite transparency = konsole transparence
 - some kind of graph
->>>>>>> 40362ffba7963af245ee9631042244d572fb534c:Taskell/linux.md
+- tmux pane color -> grey
 
 ## Doing
 
@@ -43,9 +35,7 @@
 - tmux
 - opening apps shortcuts
 - fix emacs
-<<<<<<< HEAD:Taskell/manjaro_todo.md
 - configure emacs
-=======
 - setup calibre
 - tiling (kron vs k)
 - setup emacs
@@ -55,4 +45,16 @@
 - zsh
 - rofi?
 - transparent panel
->>>>>>> 40362ffba7963af245ee9631042244d572fb534c:Taskell/linux.md
+- zsh
+- setup emacs
+    > setup emacs
+    * [ ] setup emacs
+- vscode gnome menus?
+- setup calibre
+- tiling (kron vs k) vs (xmon vd ...)
+- konsole background
+- transparent panel
+- switch to ubuntu font
+- spotify
+- mv tsk mngr to     side panel
+- port bookmarks ff->chrome

@@ -1,4 +1,0 @@
-#+TITLE: Notes 1
-
-* Research Topics
-- [ ] joint motion

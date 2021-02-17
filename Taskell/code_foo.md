@@ -5,6 +5,16 @@
 - solve problems [2hrs]
 - project!!!!!!!!
 
+## Navigation
+
+- RegEx
+    * [ ] upgrade your cheatsheet
+    * [ ] take a short course
+- how to capitalise selections
+- Grep
+- find and replace emacs
+- Multiple Cursors
+
 ## To Do
 
 - this (taskell) --> ORG!!!

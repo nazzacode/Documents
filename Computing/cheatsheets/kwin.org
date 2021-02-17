@@ -1,0 +1,39 @@
+#+TITLE:  KWin Custom Cheatsheet
+*Abvs*: Meta (Win) = M, Ctrl = C,
+Alt = A, Shift = S, Tab = T, Number = N
+| Key             | Action             |
+|-----------------+--------------------|
+| *M*             | *Basics*           |
+| M + S + c       | clse win           |
+| A + (S +) T     | next(prev) win     |
+| M + (S +) T     | next(prev) app     |
+| M + B           | hide win bordr     |
+| C + A + Esc     | kill pgrm          |
+| M + w/s         | max/min win        |
+|                 |                    |
+| *M + A*         | *Switch Dsktp*     |
+| M + N           | t dsktp N          |
+| M + C + h/l     | t dsktp L/R        |
+| M + C + jk      | dsktp list fwd/bck |
+|                 |                    |
+| *M + A*         | *Mv Win t Dsktp*   |
+| M + S + N       | mv win dsktp N     |
+| M + A + S + h/l | mv win dsktp L/R   |
+|                 |                    |
+| *( M + S )*     | *Over-view*        |
+| M + S + d       | show dsktp         |
+| M + S + g       | show dsktp grid    |
+| M + S + w       | show all wins      |
+|                 |                    |
+| *( M + C )*     | *Run Pgrm*         |
+| M/A + SPC       | k-runner           |
+| M + C + RET/t   | konsole (term)     |
+| C + Esc         | sys activs         |
+| M + (S +) Print | scrnsht(rect)      |
+| M + C + d       | dolphin (files)    |
+| M + C + y / F12 | yakuke             |
+| M + C + .       | emoji slct         |
+| M + C + c       | chrome             |
+| M + C + o       | okular             |
+| M + C + e       | emacs              |
+| M + C + v       | VS-Code            |
