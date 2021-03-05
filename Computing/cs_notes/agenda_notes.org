@@ -1,7 +1,0 @@
-#+TITLE: Nathans Org Agenda File
-
-* Task List
-** TODO Make some notes on org agenda
-SCHEDULED: <2020-11-18 Wed 17:30>
-+ You can use SPC-m-t-t to mark as "todo"
-+ SPC-m-d-s opens the org-schedule

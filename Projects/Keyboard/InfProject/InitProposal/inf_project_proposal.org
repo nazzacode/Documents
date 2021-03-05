@@ -1,0 +1,90 @@
+#+TITLE: Informatics 4th Year Project Proposal
+#+OPTIONS: toc:nil
+
+* Project Title
+Re-Imagining Input: Beyond The Typewriter Keyboard
+
+* Principle Goal
+Build a portable handheld input device (keyboard) capable of 300wpm for a normal user.
+
+* Keywords
+ Brain-computer-interface, UI, Cognitive-Science, HCI, Keyboard, Language-Design, Micro-controllers, Multi-platform, VR, XR, AR, Multi-Modal
+
+* Description
+** Summary
+This project will design a fast input device for the present (mobile) and forthcoming (XR) age of human-computer interaction, primarily looking to build a viable alternative to the typewriter-style keyboard. Specifically, designing, building and developing software around a *portable handheld chorded input device* (keyboard) as a starting point for the future of input.
+
+** Why? Bandwidth: The master variable
+Where does the human end and the computer begin? The answer appears to be that it doesn't (https://en.wikipedia.org/wiki/Extended_mind_thesis).  We become ever more entwined with our technology; one day it becomes inseparable and indistinguishable from us.  Many argue this is already so. Perhaps then a better question is /how/ this merger happens?
+
+Neurotechnology company Neuralink (https://neuralink.com) is a front-runner, building ambitious, implantable brain-machine interfaces to reach this goal. They can often be heard framing their fundamental mission in terms of "bandwidth," proposing that the current input/output channels between human and computer are relatively slow and limited, and a scale factor increase is the key to advancing human-computer symbiosis.
+
+I too believe that bandwidth is the master variable. Consider what would happen if you were able navigate a computer with comparable speed, ease and conceptual abstraction to your internal thoughts. Hence, for this project I have chosen to target *human-computer bandwidth*.
+
+#+begin_quote
+Goal 1: Increase human-computer bandwidth by a scale factor.
+#+end_quote
+
+#+begin_quote
+Goal 1.1:  Research and develop a more robust and quantifiable concept of human-computer bandwidth.
+#+end_quote
+
+** What? A bandwidth bottleneck: typewriter keyboards
+Analysis of the current human-computer input/output landscape led me to identifying the (/typewriter) keyboard/ as a bandwidth bottleneck for the following reasons:
+
+1. /Input is a bigger bottleneck than output/. LCD displays and VR headsets can produce more visual stimulus than you can process, immersing the totality of your senses.
+2. Since the typewriter's conception (~1710), /the design hasn't changed much in its evolution to modern standard keyboard./ It might be possible to capitalise on design decisions made for contingent reasons which are antithetical to modern design needs.
+3. /Keyboards are obviously un-ergonomic/ with respect to the hands that operate them
+   - The 2D grid layout is not natural for hand movements
+   - Keyboards cannot be easily operated without looking
+4. /Keyboards are hard to learn./ Despite speeds of 100+wpm being possible, the average American only manages 30wpm.
+5. Keyboards are /not naturally suited to mobile usage/. (their mobile touchscreen variants are even slower and less ergonomic)
+6. Keyboards are /not suitable for VR/AR/, which many think is the future (https://www.macrumors.com/roundup/apple-glasses/, https://tech.fb.com/ar-vr/)
+   - there is currently *no known solution for mobile text input in VR* (beyond point and click on a virtual keyboard).
+7. /Keyboards and mice cannot be used simultaneously./ This is a massive bandwidth bottleneck.
+8. Keyboards (commands) are more /conceptually complex/ than mice (point and inspect), making more /room for improvement/ (although if possible building functionality for both would be ideal).
+
+Developing *portable wireless handheld ergonomic input device* potentially solves all of these problems. Beyond a minimum working product I will focusing on design decisions that /increase bandwidth/ (faster input, higher level abstraction,  power user features). I will be using typing-speed in wpm as good approximation for the success of this project.
+
+#+begin_quote
+/Goal 0:/  *Build an portable handheld input device (keyboard) capable of 300wpm for a normal user*
+#+end_quote
+
+I don't have a good bound on how unrealistic this goal is. I took the idea vaguely from Peter Thiel who says that for an innovation to matter it has to be 10x better than the alternative. 30wpm (the average) x 10 = 300wpm.
+
+** How? Academic scope and technical aspects of the project
+*** Physical & electrical design
+The physical design will include designing a casing (CAD),  printing it and sourcing key switches. The electrical design will consist of selecting and fitting an appropriate micro-controller and soldering the design together.
+*** Keymap design
+This will be the main theoretical area of the project. Fundamentally there will be some mapping between key-switch-presses and output actions (print letter, backspace, function call, etc. )
+
+An in depth review of theory and implementations of keymaps will be conducted in the service of designing a better one. It's hard to know what will be most relevant at this stage, so I intend to research concepts such as chorded keyboards, signal compression and linguistic symbol systems.
+
+Similarly, possibilities to extend (and reduce) the classical keymap will be considered. Is the current human-computer input paradigm optimal? Is there functionality that could be moved into (or out of) the input device, unifying commands across interfaces. For example, how are Unicode characters entered? Could mouse/gesture input be unified?
+
+#+begin_quote
+/Goal 2:/ Research the emergent language of human computer interaction. What are the fundamental operations? How can we build this into a universal input device.
+#+end_quote
+
+This logic with then have to be programmed into the keyboard in a way that is well documented and extensible to others who wish to use the product.
+*** Software
+All further features will be software related. This will could include things such as an inbuilt abbreviations dictionary, beginners tutorial, auto-suggestions, a standalone UI, etc. I suspect the majority of the innovations needed to increase bandwidth will come from software.
+
+** Support Needed
+- [ ] *Software*: General guidance on creating software for other users to interact with
+- [ ] *Keymap Design*: this is quite a unique task that the guidance of an expert would be invaluable
+- [ ] *Physical Buttons:* help choosing/finding/designing the right physical switches/buttons/etc.
+
+* Completion Criteria
+1. (Easy) Functional product with full standard keyboard input functionality (or equivalent)
+2. (Moderate) 1 + Novel extended input functionality or useful supporting software
+3. (Hard) 1 + Novel extended input functionality and useful supporting software
+4. (Very Hard) 1 + outstanding extended input functionality and useful supporting software
+
+* Resources Required
+3D printer, Soldering Iron, small budget for parts.
+* Essential Skills and Knowledge
+human computer interaction, basic CAD,   basic electronics, UI design
+
+* Desirable skills and knowledge
+programming micro-controllers, human centred design, linguistics, speed-typing, ergonomics.

@@ -1,0 +1,58 @@
+#+TITLE: VS-Code Cheetsheet
+
+| Key         | Action                       |
+|-------------+------------------------------|
+|             | *Genral*                     | 
+| C-S-p       | command palette              |
+| C-,         | user settings                |
+| A-r         | right click                  |
+|             |                              |
+|             | *Editing*                    |
+| C-/         | toggle comment               |
+| A-up/down   | move line up/down            |
+| F2          | rename symbol                |
+| C-.         | quick fix                    |
+| A-M1        | new cursor                   |
+| A-S-up/down | new cursor                   |
+| C-u         | undo last cursor             |
+|             |                              |
+|             | *Navigation*                 |
+| A-hjkl      | move between splits          |
+| F12         | goto definition              |
+| C-t         | ? show all symbols           |
+| C-p         | go-to file                   |
+| C-'         | go-to terminal               |
+|             |                              |
+|             | *Splits*                     |
+| A-v         | split pane                   |
+| A-s (C-\)   | split pane (--)              |
+| A-x         | close split                  |
+|             |                              |
+|             | *Display*                    |
+| C-b         | toggle sidebar               |
+| C-S-e       | file explorer                |
+| C-S-F       | search                       |
+| C-S-g       | source control               |
+| C-S-d       | debug                        |
+| C-S-x       | extensions                   |
+| C-S-h       | replace                      |
+|             |                              |
+|             | *Search and Replace*         |
+| C-f         | find                         |
+| C-h         | replace                      |
+| A-RET       | select all occurances        |
+| C-d         | add selection to next search |
+|             |                              |
+|             |                              |
+|             | *Folds*                      |
+| C-S-/       | fold/unfold region           |
+|             |                              |
+|             | *Debug*                      |
+| F9          | toggle breakpoint            |
+| F5          | start/cont                   |
+| S+F5        | stop                         |
+|             |                              |
+|             |                              |
+|             | *Misc*                       |
+| C-k C-k     | define a keybinding          |
+|             |                              |

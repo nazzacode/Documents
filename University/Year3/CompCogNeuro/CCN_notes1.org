@@ -5,3 +5,21 @@
 *Interneurons* (also called *relay neurons*,  *association neurons*,  *connector neurons* , etc.) are neurons that connect two brain regions i.e. not direct motor neurons or sensory neurons.  Interneurons intergrate regions of information processing together
     - Interneuons main function is to provide a *neural circuit*, cunducting flow of signals or information between a sensory neuron and motor neuron.
     - In the neocortex (80% of human brain) roughly, *20-30% of neurons are interneurons*
+
+** <<<Inhibitory Stabilised Network>>> <<<ISN>>>
+
+** <<<Supralinear Stabilised Network>>> <<<SSN>>>
+
+** <<<Paradoxical Inhibition>>>
+A state of reduced excitability induced by a local response of increased excitability
+
+
+* Lectures
+
+* Papers
+** Tsodyks et at,. (1997)  Paradoxical Effects of External Modulation of
+- model consists of two pools on neurons,  one excitatory (E), one inhibitory (I)
+- suprise: the E and I both oscilated in synchronously with the external inputs (and thus each other)
+
+
+** KILL  Assignment 1

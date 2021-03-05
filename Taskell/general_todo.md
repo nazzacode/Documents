@@ -3,8 +3,7 @@
 - laptop on ebay
 - laptop on fb
 - email uni about IDB mark
-- new phone
-- love xini even MORE
+- print deadlines for xini
 
 ## Doing
 
@@ -61,3 +60,5 @@
 - check uni essays/deadlines
 - OS coursework 1
 - +£120 amazon charger
+- love xini even MORE
+- new phone

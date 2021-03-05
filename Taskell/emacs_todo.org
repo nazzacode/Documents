@@ -1,19 +1,48 @@
 #+TITLE: Emacs TODO
 
-* TODO Packages [0/0]
-- pdf viewing
-  + [X] pdf-tools
-  + [X] interleave or alternative
-  + [ ] gnplot
-  + [ ] org-randomnote :: open a randomn org note
-  + [X] tabs please tabs.
-  + [ ] centaur tabs
-* TODO Config
+* General
+- [ ] formally learn some elisp
+- [ ] make a proper cheatsheet
+  + [ ] emacs cheetsheet
+  + [ ] org-mode cheetsheet
+
+* Packages [0/0]
+- [ ] gnplot
+- [ ] org-randomnote :: open a randomn org note
+- [ ]  spellings corrections @ ~flyspell~
+
+*  Config
 - [ ] org-startup-with-inline-images :: images will automatically show up where you want them
-- [ ] fix =org-latex-preview= background
-* TODO Functions
+- [ ] fix ~org-latex-preview~ background
+
+* Functions
 - [ ] make new tags autoadd to '#+TAGS:'
-* TODO Org
+- [ ] easier ~evil-window-decrease-width~ , ~evil-window-increase-width~
+
+* Org
 - [ ] how to reload all latex fragments on theme change
+- [ ] finish reading the /org manual/
+
 * Question
--  [ ] how to expand folded '...' (tab??)
+
+
+* TODO General
+- [ ] reread and update notes
+- [ ] config.org
+- [ ] mf doom asci art
+- [ ] go through emacs knowledgebase and bookmarks
+** Packages
+[ ] drag-stuff : move lines/selections up/down a la modern editors
+
+* TODO Org Mode [0/6]
+- [-] how to toggle line numbers
+- [ ] rewatch DT VID
+- [ ] colored headings -> sized headings
+- [ ] render to pdf
+- [ ] inline latex rendering (knowledge base)
+- [ ] spellcheck
+
+* TODO Academic Setup
+- [ ] do some research
+** Packages
+  + [ ] org-roam: /description/

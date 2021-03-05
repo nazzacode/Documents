@@ -1,0 +1,48 @@
+% Created 2021-02-22 Mon 15:12
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Nathan Sharp}
+\date{\today}
+\title{Org Ref Example Notes}
+\hypersetup{
+ pdfauthor={Nathan Sharp},
+ pdftitle={Org Ref Example Notes},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Introduction\hfill{}\textsc{ATTACH}}
+\label{sec:org18fe31a}
+Hello everyone,  org ref video tutorial at: \url{https://www.youtube.com/watch?v=2t925KRBbFc}
+
+Cite a paper: \cite{cisek07_cortic_mechan_action_selec}
+
+\begin{center}
+\begin{tabular}{ll}
+C-c ] & org-ref-helm-insert-cite-link\\
+\end{tabular}
+\end{center}
+
+
+\bibliography{bibliography}
+\bibliographystyle{unsrt}
+\end{document}

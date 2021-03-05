@@ -1,0 +1,41 @@
+#+TITLE: Emacs (Doom) Cheetsheet
+
+* General
+** Navigation
+| Key     | Action                  | Description                   |
+|---------+-------------------------+-------------------------------|
+| C-x C-x | ~exchange-point-and-mark~ | move cursor to previous point |
+
+* Org Mode
+
+** Headings
+| Key             | Action             |
+|-----------------+--------------------|
+| SPC m h (C-c *) | ~org-toggle-heading~ |
+
+** Tables
+| Key         | Action                 |
+|-------------+------------------------|
+| SPC m b '-' | ~org-table-insert-hline~ |
+|             |                        |
+
+** Major Modes
+
+** Minor Modes
+*** Activating Minor Modes
+| Key     | Action        |
+|---------+---------------|
+| *SPC t*   | *Activate Mode* |
+| SPC t s | ~flyspell-mode~ |
+| SPC t z | ~Zen mode~      |
+|         |               |
+
+*** ~flyspell-mode~
+| Key   | Action                     |
+|-------+----------------------------|
+| C-,   | ~goto-net-error~             |
+| z =   | ~correct-at-point~           |
+| C-M-i | ~auto-correct-word~          |
+| C-c $ | ~correct-word-before-point~  |
+| C-;   | ~auto-correct-previous-word~ |
+** TODO Agenda

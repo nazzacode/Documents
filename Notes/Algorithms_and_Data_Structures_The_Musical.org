@@ -1,25 +1,72 @@
-#+TITLE: Algorithms & Data Structures: From Physics to Society
+#+TITLE: Algorithms & Data Structures: The Musical
 #+TAGS:
 ** TODO make new tags autoadd to #+TAGS:
 ** TODO go through this document while rereading the org manual!!
 
-* Heuristic
-- do something quantative where possible (learn data scraping, statistics)
+* Alternate Names
+- Meta Cognitive Science
 
-* Topic Ideas
-** Thesis: The Addoption Sucess of "superior technology" is first order in reagrds to the efficiency of the learning environment :thesis:
-- "a Gui is just an inbuit tutorial"
-*** TODO make quotes work better (use the tags)
+* TODO Heuristic Checklist
+- [ ] do something quantative where possible (learn data scraping, statistics)
 
-** A Review of Diagram Communication
-- what diagrams are used
-- what information can they represent
-** On Keyboards
+* Meta
+- :Thrm: vs unproved thrm;  :Conjecture: ??
+  + Theorem (Thrm) > Hypothesis (Hypo) > Conjecture (conj)
+- org mode should have double double quotes and a inline quote
+
+* Major Topics/Themes
+** Input vs Output
+- should this be a tag?
+*** Input
+*** Output
+
+** Books vs Digital Documents
+- 4-dimentional
+*** On Pages, why the page is an ideal unit of measurement :hypo:
+**** Advantages
+- timelines
+- discrete units
+- linear search encourages refamiliearisation
+-
+**** PROJ Html 'Pages'
+-> Create a pages based layout for wesite text (pagebreaks, numbering, etc)
+*** Studies showing people perform better with handwritten notes... WHY? :quest:
+
+** PROJ On Keyboards
+*Goal: Build a better keyboard*
 - the left today are gleeful to exclaim that just about everything from common sense to men is the product of wetern imperialism, one thing that actually is, is keyboards.
   + had the chinese invented keyboards....
+** PROJ The Next Generation of Scientific Papers OR The New Cognitive Sciences
+** The Structure of Documents
+
+*** Literate Programming
+**** Literate Programming vs Latex PDF Documents
+The defacto standard for academic publication is Latex PDF documents constisting of and title, abstract, keywords, body, and referecneces. The body may include methodologies, results, discussion, etc.
+
+*** Inspectable Elements (game design)
+
+*** Metadata
+
+** Reimagining The Next Editor
+*** Essential Features
+- version control
+- graph view, graph search etc.
+- multiple rankings of list
+- high affordance
+
+* Minor Topics
+** The rate of addoption of new " superior technology" is proportional efficiency of the learning environment :conj:
+- "A Gui is just an inbuit tutorial"
+*** TODO make quotes work better (use the tags)
+
+** Diagrams: A Rewiew of Visual Communication
+- what diagrams are used
+- what information can they represent
+- why do humans like them so much?
 
 ** Timeline Exploerers
 Natural way of exploring data, why aren't they more common
+- pages naturally have timelines
 - Example: developmental psychology timeline of children learing abilities
 
 ** On Scientific Papers (and technical writing)
@@ -86,7 +133,7 @@ Doing things programatically is essentially a synonym for structuring,manipulati
 
 *** github vs peer-review
 
-| *github*                                      | *peer-review*                                      |
+| *github*                                        | *peer-review*                                        |
 | fast product cycle, can be seen before stable | slow product cycle, publication can take months    |
 | errors/correction are viewed positivly        | corrections are undermining and damaging           |
 | corrections and updates are continuous        | corrections                                        |
@@ -152,11 +199,11 @@ Software Ricing, in addopting the cheap connotations of its boy-racer namesake i
 - peas arent really peas, their beans
 - beans are protien- they make you grow strong
 
-* On the Future of Education Knowledge Discemination
+** On the Future of Education Knowledge Discemination
 :Heuristic (label, auto number w/ optin to name):
-** Implications for Futher Education (Universities)
+*** Implications for Futher Education (Universities)
 
-* Lang a.k.a Codespeak creole
+** Lang a.k.a Codespeak creole
 [Definition!!] creole  (dropdown/inspect)
 Coders communicate in their own language.
 It is far more sophisticated than the tenchial jargon vocablary avaliable to lawyers,engineers etc.
@@ -168,20 +215,12 @@ Examples
 Never has it been studied or standardised as an entity within itself.
 :policy: someone should make a coder ditionary with all the standard abreviations and symbols
 
-* The Structure of Documents
+** Data Structures vs Data AND Structures
+- which should be in the default concept
 
-** Literate Programming
-*** Literate Programming vs Latex PDF Documents
-The defacto standard for academic publication is Latex PDF documents constisting of and title, abstract, keywords, body, and referecneces. The body may include methodologies, results, discussion, etc.
-
-** Inspectable Elements (game design)
-
-** Metadata
-
-
-
-* Data Structures vs Data and Structures
-- which should be in the title?
+* Idea/Project Bucket
+- find a way to tag and collate by default
+- you need to rewrite emacs/notetaking so that graph algorithms are first class
 
 * Quotes
 
@@ -205,4 +244,4 @@ The defacto standard for academic publication is Latex PDF documents constisting
 * Notes
 - graphs have weights
 - why cant contents pages have multidimentional (3D) Views
-  + working memory is a fnudamental limit
+  + working memory is a fudamental limit

@@ -1,0 +1,22 @@
+#+TITLE: Org Ref Example Notes
+
+* Introduction :ATTACH:
+:PROPERTIES:
+:ID:       5415d3de-c419-4859-aca6-9ee3c081c699
+:END:
+
+Hello everyone,  org ref video tutorial at: https://www.youtube.com/watch?v=2t925KRBbFc
+
+Add a reference to bibliography.bib
+   - [X] drag and drop pdf  (not working)
+   - [X] drag and drop from webside (not working)
+   - [ ] copypasta doi with =doi-insert-bibtex=
+   - [ ] search with =crossref-add-bibtex-entry=
+
+Cite a paper: cite:cisek07_cortic_mechan_action_selec
+
+| C-c ] | =org-ref-helm-insert-cite-link= |
+
+
+bibliography:bibliography.bib
+bibliographystyle:unsrt

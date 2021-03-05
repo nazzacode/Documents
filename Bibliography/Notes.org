@@ -1,0 +1,16 @@
+#+TITLE: Notes
+
+
+** TODO 1986 - The Ecological Approach To Visual Perception
+ :PROPERTIES:
+  :CUSTOM_ID: gibson86_ecolog
+  :AUTHOR: James Gibson
+  :JOURNAL:
+  :YEAR: 1986
+  :VOLUME:
+  :PAGES:
+  :DOI:
+  :URL: http://gen.lib.rus.ec/book/index.php?md5=579bcc3b8a410509eeccc867ce677bb1
+ :END:
+
+cite:gibson86_ecolog

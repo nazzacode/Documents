@@ -22,7 +22,7 @@ f,F            - next/previous occurrence of character\
 *,#            - next and previous occurence of word under cursor\
 gg,G           - beggining/end of file\
 NG             - take you to line number N\
-Ctrl-E/Y - move screen without moving cursor
+Ctrl-E/Y       - scroll up/down
 
 Searching
 ---------
@@ -76,3 +76,4 @@ inoremap jk <Esc> - Escape to normal mode
 <leader>t :call OpenTerminal()
 
 <leader>v :PandocPreview
+

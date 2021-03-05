@@ -1,0 +1,196 @@
+#+TITLE: Essay Notes 1
+
+* TODO
+- summaraise papers!
+- [X] pick a question tonight!
+- [ ] look over lectures
+- [ ] find papers
+- [ ] set up spellchecker (flycheck)
+- [ ] fix latex/pdf render
+- [ ] citation style
+** Org Paper
+- [ ] look at files of org-ref youtube
+- [ ] read -org-ref help
+- [ ] install missing packages when you run ~org-ref~
+
+* Question
+  *Q1. Action affordances shape our perception of the world around us. Critically evaluate this statement, drawing on at least two relevant empirical studies.*
+
+* Readings
+
+** TODO von Uexkull, J.,
+** DONE Gibson, J. (1986) /The Ecological Approach to Visual Perception/ (book)
+cite:gibson86_ecolog
+- the classic litrature on affordances
+
+** STRT Norman, D. (1988-2013). /The Design of Everyday Things/ (book)
+cite:norman02_the_design
+- different doorhandles suggest affordances for different actions
+- seemingly the largest application of affordance theory has been in the /Human Centered Design/
+  - The design principle of affordance :: getting people to do things with as little training as possible.
+    + for example, you may have a big red button of a design iterface, but if it does nothing when you press it hasnt really afforded anything.
+
+** DONE Warren, H. (1984). /Perceiving affordances: Visual guidance of stair climbing./
+cite:Warren_1984
+ - affordances offer a natural basis for /perceptual catagories/ and preferences.
+ -  Affordance (Warren) :: the functional utility of an evnvironment (onject) for an and agent with certain action capabilities
+ - percepual catogory boundries emerge from the agent environment.
+
+** DONE Labov, W.  (1973) /The boundaries of words and their meanings./
+    cite:labov76_boundary_words
+** DONE Anderson, Yamagishi and Karavia,. /Attentional processes link perception and action/
+cite:Anderson_2002
+- merely looking at an object primes the human brain to perform the action the
+- perception of objects results in the generation of both visual and motor signals in the brain, irrespective of whether or not there is an intention to act upon the object. In thi
+
+** DONE Gaver, W., /Technology Affordances/
+cite:gaver91_techn
+ * "when affordances are perceptible they offer a direct link between perception and action"
+ * tension between user familiar design and technologically cutting edge design
+   + "In this view affordances are the fundamental object of perception"
+ * Affordance (gaver) ::  properties of the world that are compatible with and relevant for peoples interactions
+ * "the actual perception of affordances will of course be determined in part by the observers culture, soical setting, experience and intentions."
+ * "affordances are not passivly perceived but explored"
+** DONE Greeno, J. G. (1994). Gibson's affordances.
+cite:Greeno_1994_gibs_aff
+** DONE Tipper, S.P. (2006). /Vision-for-action: The effects of object property discrimination and action state on affordance compatibility effects./
+cite:Tipper06_vis_act
+- Vision to Action :: When a person views an object, the action the object evokes appears to be activated independently of the persons intention to act
+*** The Link between Vision and Action
+- Clearly perceptual systems evolved primeraly to enable organisms to extrac information from visual input to guide action to support survival.
+  + *Hence these systems should not be considered to be completely independent modules cite:gibson86_ecolog*
+- vision can be converted fluently into action even when people have no intention of acting on an object. For example cite:simon69_effect show that hand responses are faster when the visual stumulus and the responding hand are on the same side of space.
+
+
+** Bloomfield, B. (2010) Bodies, Technologies and Action Possibilities: When is an Affordance?
+cite:Bloomfield_2010
+
+
+
+** TODO Volkoff and Strong (2013)
+cite:volkoff_olga13_crit_aff
+Argue against percieved affordances saying that they do not need to be perceived to be affordances.
+
+** DONE Pozzi, G. (2018). Affordance Theory in the IS Discipline: A Review and Synthesis of the Litrature
+- "first we formalises the concept of affordance"
+- "the term orginated with gibson"
+- "Gibson intended an affordance to mean an action possibility avaliable in theenvironment to an actor"
+  + Affordances exist as a relationship between an actor and an artefact, reflecting the action capabilities of the actor relating to the artifact.
+- Gibson introduces the idea of actor-environment unison, they are an an unseperatable pair with respect to an affordance
+- ! in technical products you hve the intertwining of actor and environment
+- Affordance (cite:Greeno_1994_gibs_aff :: Affordances are preconditions for activity. They are properties of whatever the actor interacts with an object in such a way that an activity can be supported
+- affordances are enabling while also constraining. They can be seen as an enabler, and positive potential for acton and also be seen as constraining actors to perform a certain action, this is particularly the case in what we will call conceptual affordances.
+*** Affordance Perception
+- The range of affordances of any object is not Immediatly avaliable to perception cite:Hutchby_2001_tech_aff
+*** Affordance Actualisation
+Early affordance researchers paid little attention to the actualisation of Affordances passivly assuming that they were trivially realised. cite:gibson86_ecolog,Greeno_1994_gibs_aff. Affordances must be realised through goal directed behavior, making goal directed behaviour centraly intertwined with the perception of affordanaces in agents. That is to say our percieved affordances are very much influenced and in the service of our goals.
+
+* Notes
+** Affordance - Wikipedia
+ * Affordance :: What the environment offers the individual
+ *  the same aspect of an environment can offer different affordances to different people
+   + /Example/: a large step many not offer any affordace to a young baby but be climbable or sitable by an adult
+ * Jakob von Uexkull had a similar concept which he called "functional tinting" (funktionale Tonung), but is "tinting" perhaps not strong enough?
+     - *Thrm: affordances are 1st class perceptual objects*
+*** Affordance As Percieved Action Possibilites
+New defintion cite:norman02_the_design
+ * Action Possibilities :: just those possibilities that are concieved by the actor
+   + In some sense it narrows the definition
+   + In another it makes it richer... affordance not only on the  physical capabilities of the agent, but also the cognitive perspective they bring (goals, memories, etc).
+** DONE *Is an affordance dependent on the perception of the agent?*
+*** Against
+ Proponents: cite:gibson86_ecolog_perception , cite:Warren_1984 , cite:Greeno_1994_gibs_aff ,
+  - more classical viewpoint
+  * cite:Warren_1984  (p684) when a person comes across a rock that  be thrown or used as a hammer, that a person should preference the use of one does not alter its properties or utility for both activities.
+    + :Obj: This is not a description of how affordance is /percieved/, as per the subject in the [[Question]].
+      - :Exx: Comming across a fint stone, it will never occur to you that it affords starting a fire if if you do not have prior experience of this utility, hence this affordance has no relevence to your perception until it is discovered.
+        + evem if this is
+      - affordances are infinite wi
+*** For
+Proponents: cite:von_Uexkull
+*** Other
+Proponents: cite:norman02_the_design,
+ * cite:norman02_the_design  redefined the percieved afforances
+   + Signifiers :: "Signifiers specify how people discover those possibilities: signifiers are signs, percep- tible signals of what can be done"
+*** Conclusion
+- If an actor steps into a room with an armchair and a softball, Gibson's definition of affordance allows that the actor may toss the recliner and sit on the softball, because that's objectively possible. Norman's definition of perceived affordance captures the likelihood that the actor will sit on the recliner and toss the softball, because of their experience with them in the past.
+ - Both  are valid ways of bounding affordance, with /mental affordance/ as a natural extension of /physical affordance/
+ - Physical Affordance ::  bounds affordance from the infinity of interpretations avaliable to all possible physical beings
+ - Percieved Affordance :: Bounds physical affordance to that which is percievable by an agent
+
+/Conclusion:/   with respect the the essay question we will be considering the more important concept is /percieved affordances/
+
+**** TODO  diagram
+
+** TODO Evolutionary Psychology: Why do we See
+- Affordance (evolution) :: Primary template to fit blocks of perception. Artifacts represent multidimensional potentials which we try and match with actions  via their properties (affordances), much like how playing multiple simultanious games (affordances) of tetris (artifact properties)
+- if this is the fundamental truth, how convoluted is the actual process, do we experiece affordanes indirectly or directly. It seem at least theoretically possible that this relationship could become indirect and convoluted over time.
+
+/Conclusion:/  Everything we see is in some sence in service of an affordance.
+
+* Essay
+** Introduction
+*** repeat the question
+  *Q1. Action affordances shape our perception of the world around us. Critically evaluate this statement, drawing on at least two relevant empirical studies.*
+*** defining terms
+- An open terrain affords walking. A cliff affords falling to your death. A rock on the ground affords tripping while walking, and it also affords throwing. So an "affordance" is some possibility for action that is mutually specified by the agent and the environment.
+- construct definition
+*** scope of the essay
+**** physical (Gibson) vs perceived (Norman) affordance
+  + classicaly people make the distinction of excluding perception from the neccesary definition of affordance, classing it instead as a second order concept as recognising process in relation to the true physically bounded concept of affordance.
+  + however personally I think its a as valid as physical affordances
+    - it gets to the heart of the perception issue, do people know what to do based on what they see
+**** why perceptual affordances are a valid class
+There are many ways that affordancies are not relevent until they are percieved where physical affordances are the wrong lense.
+- When adressing the the concept with respect to perception, it is not neccesrily helpful to have the concept entirely defined in terms of physical affordances.
+  + There can be phyical affordances that are not perceived, such as the case of a caveman who finds a flitstone but does know it affords making a fire so instead he percieves the affordance of attaching it to a stick and throwing it at an animal.
+  + There are percieved affordances that are not physical, such as in the case of halucination.
+  + And there are physical affordances that are not actualisable for mental limitations in the agent. For example, AlphaZero, the worlds current dominant chess entity can actualise the affordance of  a set of winning moves no human agent can execute for its complexity.
+
+**** strong affordance vs weak affordance
+  + how can these cases be differenciated
+*** History
+- the notion of affordances has undergone a number of migrations to other fields of science, then assimulated into the venacular of the new field leaving the possibility of confusion over the definition
+Since thes oncepts indroduction  by gibson cite:gibson58_visual_cont,gibson86_ecologcite:gibson58_visual_cont. there have been numerous studies exempifying  the perception of affordances in humans and other animals.
+
+
+cite:ingle_fogs showed frogs  become increasingly less likely to attempt jumping through an apature as it decreases in size relative to the size of the frog, inrespective of viewing andgle and distance up to a point.
+
+- :question: to what extent do humans percieve affordances as first order stucture, that is in a to what extent affordances are a fundamentaly hard coded into our perceptual systems and how does this shape our experience of reality
+
+** Study 1  -Warren, H., (1984) /Perceiving affordances: Visual guidance of stair climbing./
+cite:Warren84_stairs
+studied how human perceive the climability of stairs.  They showed  participants pictures of stairs at varying climbing heights and found that they rated their climability both in accordance with the steepness of the step but also in relation to thier height. cite:Warren84_stairs  showed that people visually percieve this affordance function directly, naturally  atuning to the affordability of stairclimbing when faced with a staircase. This supports the view that perception is anchored in the seachspace of activity.
+** Study 2 - Labov, W. (1973) /The Bounderies of words and thier meanings./
+cite:labov76_boundary_words took 'cuplike' object and produced drawings varing their width-to-height ratio and had participants catogorise them as either a bowl, cup of vase. It was found that the judgement bounderies vary in strong correlation  with the width-height ratio which suggest that our judgement bouderies have a perceptual basis bound by the functional requirement of our respctive containers. Overall suggests that many category bounderies have a perceptual orgirn in the information agents use to deliniate critical points in affordances of objects and environments.
+
+** Study 3 - Simon (1969)
+ cite:Simon_1969_effect  studied the directness of the releationship between perception and action; specifically the ability for the relationship to bypass other conceptual intermediaries. Their subjects were told to move a handle in the middle of their body to the right or left side dependent on which ear they heard a produced sound in. They found moving the handle towards the stimulus produced much faster reaction times than the reactions moving the handle away. This suggests that perception activates affodances subconsciously and can be converted fluently into action. This direct link between vision and action wsa found in other Simon-esqe  tasks cite:Michaels_1988,Hommel_1995
+
+ Extending this fiding cite:Tucker_1998 took photos of of common graspable objects and subjects had to decide whether an object was upright or inverted against the clock. They found that subjects were abe to answer faster when the rotation of the image lined up with the hand they had to press the button with.  This is interesting because even though the grasping response was irrelevant to to task, it was still capable of facilitating or inhibiting tasks dependent on whether the action was compatible with the task. This solidifies the findind that when a person percieves an artifact, the action afforded by the object can be automatically encoded as part of the experiece of the artifact.
+
+** Factors Affecting Perception of Affordances
+cite:pozzi18_... collated from the literature a list of factors affecting the actualization (thus the perception) of an affordance covering the possible enabling, stimulating, constraining and releasing conditions:
+ 1) the artifact configuration and  features,
+ 2) the  memory of past  affordances,
+ 3) the  difficulty  of  the  actualisation  itself
+ 4) the agents ability and understanding (the cognitive load)
+ 5) social and environmental structures  and  demands
+ 6) agents  ultimate  goal
+ 7) the  inability  of  the  agent/society  to  perceive  an affordance despite its availability
+ 8) the willingness to change behaviour
+ 9) the social level of skill or knowledge
+    These factors will determine the way an affordance is percieved by an agent
+** The Link Between Vision and Action
+
+
+* Key Words
+- agent (over actor, )
+- Interdependecy (of affordance and agent)
+* Off Topic
+- Visual Agnosia :: impairment of visually presented objects. Not dur yo deficit in vision, language, memory or intellect. Its a wiring job?
+- the problem with the mind sciences is they're too fucused on what goes wrong. They know much less about what is going right.
+
+* Bibliography
+bliography:~/Documents/Bibliography/bibliography.bib
+bibliographystyle:unsrt

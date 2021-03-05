@@ -1,8 +1,17 @@
 ## General
 
-- setup emacs for notetaking
+- Inf Hons Project Proposal
+    @ 2021-03-29
+    * [x] look over previous projects
+    * [x] 1st draft proposal
+    * [ ] research supervisors 
+    * [ ] email supervisors
+    * [ ] find a 2nd (out of informatics supervisor)
 - email about databases
-- fill in intial taskell
+    * [ ] run tests?
+    * [ ] 
+- fix turnit in
+- Emacs for academic writing
 
 ## (OS) Operating Systems
 
@@ -13,7 +22,7 @@
     * [x] 1.2 - intro and structure
     * [x] 2.1 - structure and IO subsystems
     * [x] 2.2 - coursework 1
-    * [ ] 3.1 - processes
+    * [x] 3.1 - processes
     * [ ] 3.2 - threads
     * [ ] 4.1 - scheduling
     * [ ] 4.2 - coursework 2
@@ -41,29 +50,22 @@
 
 ## (CCN) Computational Cognitive Neuroscience
 
-- Assignment 1
-    @ 2021-02-10 16:00 UTC
-    * [ ] references!
-    * [ ] look at lectures 
-    * [ ] look over lab 1
-    * [ ] look over lab 1 solutions
-    * [ ] read: Tsodysky et al., 1997
-    * [ ] reaseach ISN
-    * [ ] look at piazza
-    * [ ] abstract?
-    * [ ] org mode?!?
+- Assingment 2 - Code (out 02-03-21)
+    @ 2021-03-20
+- Choose seed article
+    @ 2021-03-13
+- Assignment 3 - Essay
+    @ 2021-04-19
+- Lectures
+- Textbook
 
 ## (PAC) Perception Action Cognition
 
-- Midterm Essay  [30%]
-    @ 2021-02-16 12:00 UTC
-    > 100 words.
 - Final Essay [70%]
     @ 2021-04-15 11:00 UTC
     > 200 words.
     * [ ] go to the damn PPLS writing centre
     * [ ] 
-- you can ask for your own question but you need permision - get learning!!
 
 ## Done
 
@@ -73,3 +75,19 @@
     * [x] google header files
 - download book
 - get book in calibre
+- setup emacs for notetaking
+- fill in intial taskell
+- Assignment 1
+    * [ ] references!
+    * [ ] look at lectures 
+    * [ ] look over lab 1
+    * [ ] look over lab 1 solutions
+    * [ ] read: Tsodysky et al., 1997
+    * [ ] reaseach ISN
+    * [ ] look at piazza
+    * [ ] abstract?
+    * [ ] org mode?!?
+- Midterm Essay  [30%]
+    > 100 words.
+- add all deadlines
+- print this off for xini

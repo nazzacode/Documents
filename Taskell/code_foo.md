@@ -46,3 +46,7 @@
 - Nix
     * [ ] read the manual in full
     * [ ] learn the laguage
+
+## To Take Notes On
+
+- Joshua Bach Youtube
