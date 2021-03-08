@@ -1,0 +1,63 @@
+#+TITLE: Supervisor Hunt
+
+
+* Process
+1. Find supervisor
+2. invite on system
+3. Email
+   - relate to their skill-set
+
+* Expertise Directory
+There's no one person that can fully supervise me. Keep this as an address book for when you need specific help.
+** Supervisor
+
+| Name               | Dept | Notes                            | Rank | List | Email |
+|--------------------+------+----------------------------------+------+------+-------|
+| Antonio Barbalace  |  Inf | OS, Suervisor?                   | hii  | Yes  | Yes   |
+| Cristina Alexandru |  Inf | HCI, usability eng., healthcare  | low  | Yes  | todo  |
+| John Lee           |  Inf | Startups, HCI, future, design    | hii  | Yes  | wait  |
+| Mohsen Khadem      |  Inf | Robot surgery (hands?), eng.     | mid  | No   | Todo  |
+| Johanna More       |  Inf | computational discorse,          | low  | No   |       |
+| Aurora Constantin  |  Inf | HCI, Digt. learning, assist tech | low  | Yes  |       |
+| Alex Lascarides    |  Inf | semantics of communication       | mid  | Yes  | No    |
+| Kia Nazarpour      |  Inf | prosthetic, myo, neural interf.  | hii  | Yes  | No    |
+
+** Electronics
+
+| Name | Notes | Rank | Contact |
+|------+-------+------+---------|
+|      |       |      |         |
+
+** Design
+** Switches
+** Key-map
+** Software
+
+- research previous robotics projects?
+
+** Whats Missing?
+- VR/AR Specialism
+- Product Design and Engineering
+- Human Computer Interaction Hardware
+
+* Draft Email
+Dear Professor __
+
+I am an undergraduate Informatics student inquiring as to whether you might like to supervise/advise my 4th year project given your background in
+
+ I'm looking to assemble a small advisory team for different aspects of the project as the scope of the project is wider than any single persons domain expertise.
+
+I have attached my proposal in an HTML document. Please let me know if you would be interested in advising/supervising my project.
+
+Best Regards,
+
+Nathan
+
+P.S The deadline for registering interest is Friday so please get back to me before then if you are interested
+
+** Antonio
+Hey Doc,
+
+Following our discussion yesterday I've been doing a lot of research into finding appropriate supervisors/advisors.
+
+The bottom line is I've had alot of positive response but

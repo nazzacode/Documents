@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-03 Wed 21:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Informatics 4th Year Project Proposal</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Nathan Sharp" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Informatics 4th Year Project Proposal</h1>
+
+<div id="outline-container-org6855fbb" class="outline-2">
+<h2 id="org6855fbb"><span class="section-number-2">1</span> Project Title</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Re-Imagining Input: Beyond The Typewriter Keyboard
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd9f8fa4" class="outline-2">
+<h2 id="orgd9f8fa4"><span class="section-number-2">2</span> Principle Goal</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Build a portable handheld input device (keyboard) capable of 300wpm for a normal user.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ca78c3" class="outline-2">
+<h2 id="org4ca78c3"><span class="section-number-2">3</span> Keywords</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Brain-computer-interface, UI, Cognitive-Science, HCI, Keyboard, Language-Design, Micro-controllers, Multi-platform, VR, XR, AR, Multi-Modal
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6e4a047" class="outline-2">
+<h2 id="org6e4a047"><span class="section-number-2">4</span> Description</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org4c2aa57" class="outline-3">
+<h3 id="org4c2aa57"><span class="section-number-3">4.1</span> Summary</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+This project will design a fast input device for the present (mobile) and forthcoming (XR) age of human-computer interaction, primarily looking to build a viable alternative to the typewriter-style keyboard. Specifically, designing, building and developing software around a <b>portable handheld chorded input device</b> (keyboard) as a starting point for the future of input.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0b7362a" class="outline-3">
+<h3 id="org0b7362a"><span class="section-number-3">4.2</span> Why? Bandwidth: The master variable</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Where does the human end and the computer begin? The answer appears to be that it doesn&rsquo;t (<a href="https://en.wikipedia.org/wiki/Extended_mind_thesis">https://en.wikipedia.org/wiki/Extended_mind_thesis</a>).  We become ever more entwined with our technology; one day it becomes inseparable and indistinguishable from us.  Many argue this is already so. Perhaps then a better question is <i>how</i> this merger happens?
+</p>
+
+<p>
+Neurotechnology company Neuralink (<a href="https://neuralink.com">https://neuralink.com</a>) is a front-runner, building ambitious, implantable brain-machine interfaces to reach this goal. They can often be heard framing their fundamental mission in terms of &ldquo;bandwidth,&rdquo; proposing that the current input/output channels between human and computer are relatively slow and limited, and a scale factor increase is the key to advancing human-computer symbiosis.
+</p>
+
+<p>
+I too believe that bandwidth is the master variable. Consider what would happen if you were able navigate a computer with comparable speed, ease and conceptual abstraction to your internal thoughts. Hence, for this project I have chosen to target <b>human-computer bandwidth</b>.
+</p>
+
+<blockquote>
+<p>
+Goal 1: Increase human-computer bandwidth by a scale factor.
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Goal 1.1:  Research and develop a more robust and quantifiable concept of human-computer bandwidth.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org9e625d3" class="outline-3">
+<h3 id="org9e625d3"><span class="section-number-3">4.3</span> What? A bandwidth bottleneck: typewriter keyboards</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Analysis of the current human-computer input/output landscape led me to identifying the (<i>typewriter) keyboard</i> as a bandwidth bottleneck for the following reasons:
+</p>
+
+<ol class="org-ol">
+<li><i>Input is a bigger bottleneck than output</i>. LCD displays and VR headsets can produce more visual stimulus than you can process, immersing the totality of your senses.</li>
+<li>Since the typewriter&rsquo;s conception (~1710), <i>the design hasn&rsquo;t changed much in its evolution to modern standard keyboard.</i> It might be possible to capitalise on design decisions made for contingent reasons which are antithetical to modern design needs.</li>
+<li><i>Keyboards are obviously un-ergonomic</i> with respect to the hands that operate them
+<ul class="org-ul">
+<li>The 2D grid layout is not natural for hand movements</li>
+<li>Keyboards cannot be easily operated without looking</li>
+</ul></li>
+<li><i>Keyboards are hard to learn.</i> Despite speeds of 100+wpm being possible, the average American only manages 30wpm.</li>
+<li>Keyboards are <i>not naturally suited to mobile usage</i>. (their mobile touchscreen variants are even slower and less ergonomic)</li>
+<li>Keyboards are <i>not suitable for VR/AR</i>, which many think is the future (<a href="https://www.macrumors.com/roundup/apple-glasses/">https://www.macrumors.com/roundup/apple-glasses/</a>, <a href="https://tech.fb.com/ar-vr/">https://tech.fb.com/ar-vr/</a>)
+<ul class="org-ul">
+<li>there is currently <b>no known solution for mobile text input in VR</b> (beyond point and click on a virtual keyboard).</li>
+</ul></li>
+<li><i>Keyboards and mice cannot be used simultaneously.</i> This is a massive bandwidth bottleneck.</li>
+<li>Keyboards (commands) are more <i>conceptually complex</i> than mice (point and inspect), making more <i>room for improvement</i> (although if possible building functionality for both would be ideal).</li>
+</ol>
+
+<p>
+Developing <b>portable wireless handheld ergonomic input device</b> potentially solves all of these problems. Beyond a minimum working product I will focusing on design decisions that <i>increase bandwidth</i> (faster input, higher level abstraction,  power user features). I will be using typing-speed in wpm as good approximation for the success of this project.
+</p>
+
+<blockquote>
+<p>
+<i>Goal 0:</i>  <b>Build an portable handheld input device (keyboard) capable of 300wpm for a normal user</b>
+</p>
+</blockquote>
+
+<p>
+I don&rsquo;t have a good bound on how unrealistic this goal is. I took the idea vaguely from Peter Thiel who says that for an innovation to matter it has to be 10x better than the alternative. 30wpm (the average) x 10 = 300wpm.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd0ef74" class="outline-3">
+<h3 id="orgfd0ef74"><span class="section-number-3">4.4</span> How? Academic scope and technical aspects of the project</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-orgf1c3c08" class="outline-4">
+<h4 id="orgf1c3c08"><span class="section-number-4">4.4.1</span> Physical &amp; electrical design</h4>
+<div class="outline-text-4" id="text-4-4-1">
+<p>
+The physical design will include designing a casing (CAD),  printing it and sourcing key switches. The electrical design will consist of selecting and fitting an appropriate micro-controller and soldering the design together.
+</p>
+</div>
+</div>
+<div id="outline-container-orgca22650" class="outline-4">
+<h4 id="orgca22650"><span class="section-number-4">4.4.2</span> Keymap design</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<p>
+This will be the main theoretical area of the project. Fundamentally there will be some mapping between key-switch-presses and output actions (print letter, backspace, function call, etc. )
+</p>
+
+<p>
+An in depth review of theory and implementations of keymaps will be conducted in the service of designing a better one. It&rsquo;s hard to know what will be most relevant at this stage, so I intend to research concepts such as chorded keyboards, signal compression and linguistic symbol systems.
+</p>
+
+<p>
+Similarly, possibilities to extend (and reduce) the classical keymap will be considered. Is the current human-computer input paradigm optimal? Is there functionality that could be moved into (or out of) the input device, unifying commands across interfaces. For example, how are Unicode characters entered? Could mouse/gesture input be unified?
+</p>
+
+<blockquote>
+<p>
+<i>Goal 2:</i> Research the emergent language of human computer interaction. What are the fundamental operations? How can we build this into a universal input device.
+</p>
+</blockquote>
+
+<p>
+This logic with then have to be programmed into the keyboard in a way that is well documented and extensible to others who wish to use the product.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb668646" class="outline-4">
+<h4 id="orgb668646"><span class="section-number-4">4.4.3</span> Software</h4>
+<div class="outline-text-4" id="text-4-4-3">
+<p>
+All further features will be software related. This will could include things such as an inbuilt abbreviations dictionary, beginners tutorial, auto-suggestions, a standalone UI, etc. I suspect the majority of the innovations needed to increase bandwidth will come from software.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6740126" class="outline-3">
+<h3 id="org6740126"><span class="section-number-3">4.5</span> Support Needed</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> <b>Software</b>: General guidance on creating software for other users to interact with</li>
+<li class="off"><code>[&#xa0;]</code> <b>Keymap Design</b>: this is quite a unique task that the guidance of an expert would be invaluable</li>
+<li class="off"><code>[&#xa0;]</code> <b>Physical Buttons:</b> help choosing/finding/designing the right physical switches/buttons/etc.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbfed953" class="outline-2">
+<h2 id="orgbfed953"><span class="section-number-2">5</span> Completion Criteria</h2>
+<div class="outline-text-2" id="text-5">
+<ol class="org-ol">
+<li>(Easy) Functional product with full standard keyboard input functionality (or equivalent)</li>
+<li>(Moderate) 1 + Novel extended input functionality or useful supporting software</li>
+<li>(Hard) 1 + Novel extended input functionality and useful supporting software</li>
+<li>(Very Hard) 1 + outstanding extended input functionality and useful supporting software</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org40e89bc" class="outline-2">
+<h2 id="org40e89bc"><span class="section-number-2">6</span> Resources Required</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+3D printer, Soldering Iron, small budget for parts.
+</p>
+</div>
+</div>
+<div id="outline-container-org6704eab" class="outline-2">
+<h2 id="org6704eab"><span class="section-number-2">7</span> Essential Skills and Knowledge</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+human computer interaction, basic CAD,   basic electronics, UI design
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8cbc75d" class="outline-2">
+<h2 id="org8cbc75d"><span class="section-number-2">8</span> Desirable skills and knowledge</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+programming micro-controllers, human centred design, linguistics, speed-typing, ergonomics.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Nathan Sharp</p>
+<p class="date">Created: 2021-03-03 Wed 21:03</p>
+</div>
+</body>
+</html>
